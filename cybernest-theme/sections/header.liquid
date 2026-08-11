@@ -1,0 +1,82 @@
+<header class="site-header site-header--desktop">
+  <div class="site-header__top container">
+    <a class="site-header__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
+      {% if settings.logo != blank %}
+        {{ settings.logo | image_url: width: 240 | image_tag: loading: 'eager', alt: shop.name }}
+      {% else %}
+        <span>{{ shop.name }}</span>
+      {% endif %}
+    </a>
+
+    <div class="site-header__search" role="search">
+      {% comment %} predictive search - built Day 5 {% endcomment %}
+      <span>Search CyberNest</span>
+    </div>
+
+    <div class="site-header__actions" aria-label="Store links">
+      <a class="site-header__action" href="{{ routes.account_url }}">Account</a>
+      <a class="site-header__action" href="/pages/wishlist">Wishlist</a>
+      <a class="site-header__action site-header__cart" href="{{ routes.cart_url }}">
+        Cart
+        <span class="site-header__cart-count" data-cart-count>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-header__nav" aria-label="Main">
+    <div class="container">
+      <ul class="site-header__menu">
+        {% for link in section.settings.main_menu.links %}
+          <li class="site-header__menu-item">
+            <a class="site-header__menu-link" href="{{ link.url }}">{{ link.title }}</a>
+
+            {% if link.links != blank %}
+              <div class="mega-menu">
+                <div class="mega-menu__inner container">
+                  {% for child_link in link.links %}
+                    <div class="mega-menu__column">
+                      <a class="mega-menu__heading" href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                      {% if child_link.links != blank %}
+                        <ul class="mega-menu__links">
+                          {% for grandchild_link in child_link.links %}
+                            <li>
+                              <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          </li>
+        {% else %}
+          <li class="site-header__menu-item">
+            <a class="site-header__menu-link" href="{{ routes.all_products_collection_url }}">Products</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "Main menu",
+      "default": "main-menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}

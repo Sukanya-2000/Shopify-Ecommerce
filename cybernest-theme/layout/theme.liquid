@@ -13,9 +13,13 @@
     {% endstyle %}
     {% render 'css-variables' %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'header.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'header.js' | asset_url }}" defer></script>
     {{ content_for_header }}
   </head>
   <body>
+    {% section 'header' %}
+    {% section 'header-mobile-nav' %}
     {{ content_for_layout }}
   </body>
 </html>
