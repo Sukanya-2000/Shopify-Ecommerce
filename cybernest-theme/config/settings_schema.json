@@ -1,0 +1,104 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "CyberNest",
+    "theme_version": "1.0.0",
+    "theme_author": "Sukanya",
+    "theme_support_email": "support@example.com",
+    "theme_documentation_url": "https://example.com"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary color",
+        "default": "#111827"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary color",
+        "default": "#2563EB"
+      },
+      {
+        "type": "color",
+        "id": "color_accent",
+        "label": "Accent color",
+        "default": "#14B8A6"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background color",
+        "default": "#F8FAFC"
+      },
+      {
+        "type": "color",
+        "id": "color_surface",
+        "label": "Surface color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text color",
+        "default": "#0F172A"
+      },
+      {
+        "type": "color",
+        "id": "color_muted",
+        "label": "Muted text color",
+        "default": "#64748B"
+      },
+      {
+        "type": "color",
+        "id": "color_success",
+        "label": "Success color",
+        "default": "#16A34A"
+      },
+      {
+        "type": "color",
+        "id": "color_warning",
+        "label": "Warning color",
+        "default": "#F59E0B"
+      },
+      {
+        "type": "color",
+        "id": "color_error",
+        "label": "Error color",
+        "default": "#DC2626"
+      },
+      {
+        "type": "color",
+        "id": "color_sale",
+        "label": "Sale color",
+        "default": "#E11D48"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border color",
+        "default": "#CBD5E1"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "font_heading",
+        "label": "Heading font",
+        "default": "assistant_n7"
+      },
+      {
+        "type": "font_picker",
+        "id": "font_body",
+        "label": "Body font",
+        "default": "assistant_n4"
+      }
+    ]
+  }
+]
