@@ -1,0 +1,33 @@
+<main class="page-section">
+  <div class="container stack">
+    <h1>{{ collection.title }}</h1>
+
+    {% if collection.description != blank %}
+      <div>{{ collection.description }}</div>
+    {% endif %}
+
+    {% if collection.products_count > 0 %}
+      <div class="grid">
+        {% for product in collection.products %}
+          <article class="col-4 stack">
+            <a href="{{ product.url }}">
+              {% if product.featured_image %}
+                {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.featured_image.alt }}
+              {% endif %}
+              <h2>{{ product.title }}</h2>
+            </a>
+            <p>{{ product.price | money }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No products found in this collection.</p>
+    {% endif %}
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main collection"
+}
+{% endschema %}

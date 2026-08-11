@@ -1,0 +1,45 @@
+<main class="page-section page-section--hero">
+  <div class="container">
+    {% if page.content != blank %}
+      <div class="stack">
+        <h1>{{ page.title }}</h1>
+        <div>{{ page.content }}</div>
+      </div>
+    {% else %}
+      <div class="hero-panel">
+        <div class="stack">
+          <span class="badge">CyberNest</span>
+          <h1>Smart tech essentials for modern homes.</h1>
+          <p class="hero-copy">
+            Discover connected devices, practical accessories, and everyday upgrades curated for a cleaner digital life.
+          </p>
+          <div class="button-row">
+            <a class="btn" href="{{ routes.all_products_collection_url }}">Shop products</a>
+            <a class="btn btn--secondary" href="{{ routes.search_url }}">Search store</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-hidden="true">
+          <div class="showcase-card showcase-card--primary">
+            <span></span>
+            <strong>Smart Hub</strong>
+          </div>
+          <div class="showcase-card">
+            <span></span>
+            <strong>Desk Gear</strong>
+          </div>
+          <div class="showcase-card">
+            <span></span>
+            <strong>Home Tech</strong>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main page"
+}
+{% endschema %}

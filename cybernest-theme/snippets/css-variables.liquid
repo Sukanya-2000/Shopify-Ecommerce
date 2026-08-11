@@ -1,0 +1,30 @@
+{% style %}
+  :root {
+    --color-primary: {{ settings.color_primary }};
+    --color-secondary: {{ settings.color_secondary }};
+    --color-accent: {{ settings.color_accent }};
+    --color-bg: {{ settings.color_bg }};
+    --color-surface: {{ settings.color_surface }};
+    --color-text: {{ settings.color_text }};
+    --color-muted: {{ settings.color_muted }};
+    --color-success: {{ settings.color_success }};
+    --color-warning: {{ settings.color_warning }};
+    --color-error: {{ settings.color_error }};
+    --color-sale: {{ settings.color_sale }};
+    --color-border: {{ settings.color_border }};
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 40px;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+
+    --container-max: 1280px;
+    --font-heading: {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
+    --font-body: {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
+  }
+{% endstyle %}
