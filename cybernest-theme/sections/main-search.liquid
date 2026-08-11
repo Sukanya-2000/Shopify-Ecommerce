@@ -1,0 +1,42 @@
+<main class="page-section">
+  <div class="container stack">
+    <h1>Search</h1>
+
+    <form action="{{ routes.search_url }}" method="get" role="search" class="grid">
+      <div class="col-9">
+        <input
+          class="input"
+          type="search"
+          name="q"
+          value="{{ search.terms | escape }}"
+          placeholder="Search products"
+        >
+      </div>
+      <div class="col-3">
+        <button class="btn" type="submit">Search</button>
+      </div>
+    </form>
+
+    {% if search.performed %}
+      {% if search.results_count > 0 %}
+        <div class="grid">
+          {% for item in search.results %}
+            <article class="col-4 stack">
+              <a href="{{ item.url }}">
+                <h2>{{ item.title }}</h2>
+              </a>
+            </article>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>No results found.</p>
+      {% endif %}
+    {% endif %}
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main search"
+}
+{% endschema %}

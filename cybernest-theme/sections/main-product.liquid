@@ -1,0 +1,37 @@
+<main class="page-section">
+  <div class="container">
+    <div class="grid">
+      <div class="col-6">
+        {% if product.featured_image %}
+          {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'eager', alt: product.featured_image.alt }}
+        {% endif %}
+      </div>
+
+      <div class="col-6 stack">
+        <h1>{{ product.title }}</h1>
+        <p>{{ product.price | money }}</p>
+
+        {% if product.description != blank %}
+          <div>{{ product.description }}</div>
+        {% endif %}
+
+        {% form 'product', product %}
+          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          <button class="btn" type="submit">
+            {% if product.available %}
+              Add to cart
+            {% else %}
+              Sold out
+            {% endif %}
+          </button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main product"
+}
+{% endschema %}

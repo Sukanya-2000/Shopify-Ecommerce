@@ -31,6 +31,20 @@ a {
   color: var(--color-secondary);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-section {
+  padding-block: var(--space-5);
+}
+
+.stack > * + * {
+  margin-block-start: var(--space-3);
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max);

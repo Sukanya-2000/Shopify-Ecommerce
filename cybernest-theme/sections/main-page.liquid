@@ -1,0 +1,24 @@
+<main class="page-section">
+  <div class="container stack">
+    <h1>
+      {% if page.title != blank %}
+        {{ page.title }}
+      {% else %}
+        CyberNest
+      {% endif %}
+    </h1>
+
+    {% if page.content != blank %}
+      <div>{{ page.content }}</div>
+    {% else %}
+      <p>Design system foundation is loaded.</p>
+      <a class="btn" href="{{ routes.all_products_collection_url }}">View products</a>
+    {% endif %}
+  </div>
+</main>
+
+{% schema %}
+{
+  "name": "Main page"
+}
+{% endschema %}
