@@ -1,0 +1,295 @@
+.announcement-bar {
+  border-block-end: 1px solid var(--color-border);
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.announcement-bar--surface {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.announcement-bar__track {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  padding-block: var(--space-2);
+  scroll-snap-type: x proximity;
+}
+
+.announcement-bar__item {
+  flex: 0 0 auto;
+  color: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  scroll-snap-align: center;
+  text-decoration: none;
+}
+
+.homepage-hero {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.homepage-hero__media,
+.promo-banner__media {
+  position: absolute;
+  inset: 0;
+}
+
+.homepage-hero__media::after,
+.promo-banner__media::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--color-primary);
+  opacity: 0.58;
+}
+
+.homepage-hero__media img,
+.promo-banner__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homepage-hero__content,
+.promo-banner__content {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  padding-block: var(--space-5);
+}
+
+.homepage-hero h1,
+.promo-banner h2 {
+  color: inherit;
+}
+
+.homepage-hero h1 {
+  max-width: 12ch;
+  font-size: 3rem;
+}
+
+.homepage-hero__description,
+.promo-banner__text,
+.newsletter-section__description,
+.featured-collection__empty {
+  color: var(--color-muted);
+}
+
+.homepage-hero__description {
+  max-width: 36rem;
+  font-size: 1.125rem;
+}
+
+.homepage-hero .btn--secondary,
+.promo-banner .btn--secondary {
+  border-color: var(--color-surface);
+  color: var(--color-surface);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-block-end: var(--space-4);
+}
+
+.department-grid,
+.product-grid,
+.trust-badges {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.department-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.department-card,
+.product-card,
+.trust-badge {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.department-card {
+  overflow: hidden;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.department-card__media,
+.product-card__media {
+  aspect-ratio: 1;
+  background: var(--color-bg);
+}
+
+.department-card__media img,
+.product-card__media img,
+.brand-logo__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.department-card__title {
+  padding: var(--space-3);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.product-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-card {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-2);
+}
+
+.product-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card__title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.product-card__vendor {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.product-card__price {
+  font-weight: 700;
+}
+
+.product-card__button {
+  width: 100%;
+  opacity: 0.64;
+  cursor: not-allowed;
+}
+
+.promo-banner {
+  position: relative;
+  min-height: 360px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.promo-banner__text {
+  max-width: 34rem;
+}
+
+.brand-logos {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  padding-block-end: var(--space-2);
+  scroll-snap-type: x mandatory;
+}
+
+.brand-logo {
+  flex: 0 0 160px;
+  display: grid;
+  min-height: 96px;
+  place-items: center;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  scroll-snap-align: start;
+}
+
+.brand-logo__image {
+  width: 100%;
+  height: 56px;
+}
+
+.brand-logo__image img {
+  object-fit: contain;
+}
+
+.newsletter-section {
+  background: var(--color-surface);
+}
+
+.newsletter-section__inner {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.newsletter-form {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.newsletter-form__message {
+  color: var(--color-success);
+}
+
+.newsletter-form__message--error {
+  color: var(--color-error);
+}
+
+.trust-badges {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.trust-badge {
+  display: grid;
+  gap: var(--space-2);
+  justify-items: center;
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.trust-badge svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 48em) {
+  .homepage-hero h1 {
+    font-size: 4rem;
+  }
+
+  .department-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .newsletter-section__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  }
+
+  .trust-badges {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 72em) {
+  .department-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}

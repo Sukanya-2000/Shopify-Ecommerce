@@ -1,0 +1,68 @@
+<section class="page-section">
+  <div class="container">
+    <div class="trust-badges">
+      {%- for block in section.blocks -%}
+        <div class="trust-badge" {{ block.shopify_attributes }}>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3l7 3v5c0 4.4-2.8 8.3-7 9.7C7.8 19.3 5 15.4 5 11V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8.8 11.8l2.1 2.1 4.6-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          {%- if block.settings.label != blank -%}
+            <strong>{{ block.settings.label }}</strong>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust badges",
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Secure payments"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust badges",
+      "blocks": [
+        {
+          "type": "badge",
+          "settings": {
+            "label": "Secure payments"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "label": "Fast shipping"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "label": "Easy returns"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "label": "Support that helps"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

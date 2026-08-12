@@ -1,0 +1,94 @@
+<section class="homepage-hero">
+  {%- if section.settings.desktop_image != blank -%}
+    <picture class="homepage-hero__media">
+      {%- if section.settings.mobile_image != blank -%}
+        <source media="(max-width: 47.99em)" srcset="{{ section.settings.mobile_image | image_url: width: 900 }}">
+      {%- endif -%}
+      {{
+        section.settings.desktop_image
+        | image_url: width: 2400
+        | image_tag:
+          loading: 'eager',
+          fetchpriority: 'high',
+          widths: '900, 1400, 1800, 2400',
+          sizes: '100vw',
+          alt: section.settings.heading
+      }}
+    </picture>
+  {%- endif -%}
+  <div class="container">
+    <div class="homepage-hero__content stack">
+      {%- if section.settings.heading != blank -%}
+        <h1>{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <div class="homepage-hero__description">{{ section.settings.description }}</div>
+      {%- endif -%}
+      <div class="button-row">
+        {%- if section.settings.primary_cta_text != blank and section.settings.primary_cta_link != blank -%}
+          <a class="btn" href="{{ section.settings.primary_cta_link }}">{{ section.settings.primary_cta_text }}</a>
+        {%- endif -%}
+        {%- if section.settings.secondary_cta_text != blank and section.settings.secondary_cta_link != blank -%}
+          <a class="btn btn--secondary" href="{{ section.settings.secondary_cta_link }}">{{ section.settings.secondary_cta_text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "CyberNest"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Smart tech essentials for work, play, and everything between.</p>"
+    },
+    {
+      "type": "text",
+      "id": "primary_cta_text",
+      "label": "Primary CTA text",
+      "default": "Shop deals"
+    },
+    {
+      "type": "url",
+      "id": "primary_cta_link",
+      "label": "Primary CTA link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_cta_text",
+      "label": "Secondary CTA text",
+      "default": "Explore departments"
+    },
+    {
+      "type": "url",
+      "id": "secondary_cta_link",
+      "label": "Secondary CTA link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero banner"
+    }
+  ]
+}
+{% endschema %}

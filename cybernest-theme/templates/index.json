@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "announcement_bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "free_shipping": {
+          "type": "announcement",
+          "settings": {
+            "message": "Free shipping over $50",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["free_shipping"],
+      "settings": {
+        "show_bar": true,
+        "message": "Free shipping over $50",
+        "link": "",
+        "style": "primary"
+      }
+    },
+    "hero_banner": {
+      "type": "hero-banner",
+      "settings": {
+        "desktop_image": "",
+        "mobile_image": "",
+        "heading": "CyberNest",
+        "description": "<p>Smart tech essentials for work, play, and everything between.</p>",
+        "primary_cta_text": "Shop deals",
+        "primary_cta_link": "",
+        "secondary_cta_text": "Explore departments",
+        "secondary_cta_link": ""
+      }
+    },
+    "department_grid": {
+      "type": "department-grid",
+      "blocks": {
+        "department_1": {
+          "type": "department",
+          "settings": {
+            "image": "",
+            "title": "Department",
+            "link": ""
+          }
+        },
+        "department_2": {
+          "type": "department",
+          "settings": {
+            "image": "",
+            "title": "Department",
+            "link": ""
+          }
+        },
+        "department_3": {
+          "type": "department",
+          "settings": {
+            "image": "",
+            "title": "Department",
+            "link": ""
+          }
+        },
+        "department_4": {
+          "type": "department",
+          "settings": {
+            "image": "",
+            "title": "Department",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["department_1", "department_2", "department_3", "department_4"],
+      "settings": {
+        "heading": "Shop by department"
+      }
+    },
+    "deals": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Today's Deals",
+        "collection": "all",
+        "count": 8
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Best Sellers",
+        "collection": "all",
+        "count": 8
+      }
+    },
+    "new_arrivals": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "New Arrivals",
+        "collection": "all",
+        "count": 8
+      }
+    },
+    "promo_banner": {
+      "type": "promo-banner",
+      "settings": {
+        "image": "",
+        "heading": "Limited-time tech upgrades",
+        "subtext": "<p>Build your setup with curated accessories, devices, and daily-use gear.</p>",
+        "cta_text": "Shop now",
+        "cta_link": ""
+      }
+    },
+    "brand_logos": {
+      "type": "brand-logos",
+      "blocks": {
+        "brand_1": {
+          "type": "brand",
+          "settings": {
+            "logo": "",
+            "link": ""
+          }
+        },
+        "brand_2": {
+          "type": "brand",
+          "settings": {
+            "logo": "",
+            "link": ""
+          }
+        },
+        "brand_3": {
+          "type": "brand",
+          "settings": {
+            "logo": "",
+            "link": ""
+          }
+        },
+        "brand_4": {
+          "type": "brand",
+          "settings": {
+            "logo": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["brand_1", "brand_2", "brand_3", "brand_4"],
+      "settings": {
+        "heading": "Featured brands"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Get CyberNest updates",
+        "description": "<p>Sign up for launches, deals, and curated setup ideas.</p>"
+      }
+    },
+    "trust_badges": {
+      "type": "trust-badges",
+      "blocks": {
+        "secure_payments": {
+          "type": "badge",
+          "settings": {
+            "label": "Secure payments"
+          }
+        },
+        "fast_shipping": {
+          "type": "badge",
+          "settings": {
+            "label": "Fast shipping"
+          }
+        },
+        "easy_returns": {
+          "type": "badge",
+          "settings": {
+            "label": "Easy returns"
+          }
+        },
+        "support": {
+          "type": "badge",
+          "settings": {
+            "label": "Support that helps"
+          }
+        }
+      },
+      "block_order": ["secure_payments", "fast_shipping", "easy_returns", "support"],
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement_bar",
+    "hero_banner",
+    "department_grid",
+    "deals",
+    "bestsellers",
+    "new_arrivals",
+    "promo_banner",
+    "brand_logos",
+    "newsletter",
+    "trust_badges"
+  ]
+}

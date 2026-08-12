@@ -1,0 +1,27 @@
+{% comment %} TODO Day 4: full product-card with badges, hover image, quick-add {% endcomment %}
+
+<article class="product-card">
+  <a class="product-card__link stack" href="{{ product.url }}">
+    <div class="product-card__media">
+      {%- if product.featured_image -%}
+        {{
+          product.featured_image
+          | image_url: width: 640
+          | image_tag:
+            loading: 'lazy',
+            widths: '320, 480, 640',
+            sizes: '(min-width: 48em) 25vw, 50vw',
+            alt: product.featured_image.alt
+        }}
+      {%- endif -%}
+    </div>
+    <div class="stack">
+      {%- if product.vendor != blank -%}
+        <p class="product-card__vendor">{{ product.vendor }}</p>
+      {%- endif -%}
+      <h3 class="product-card__title">{{ product.title }}</h3>
+      <p class="product-card__price">{{ product.price | money }}</p>
+    </div>
+  </a>
+  <button class="btn btn--sm product-card__button" type="button" disabled>Coming soon</button>
+</article>
