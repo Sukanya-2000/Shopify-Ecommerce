@@ -1,0 +1,23 @@
+<predictive-search class="predictive-search">
+  <form action="{{ routes.search_url }}" method="get" role="search" class="predictive-search__form">
+    <label class="visually-hidden" for="HeaderPredictiveSearch">Search</label>
+    <input
+      id="HeaderPredictiveSearch"
+      class="predictive-search__input"
+      type="search"
+      name="q"
+      value="{{ search.terms | escape }}"
+      placeholder="Search CyberNest"
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      role="combobox"
+      aria-expanded="false"
+      aria-controls="PredictiveSearchResults"
+      aria-autocomplete="list"
+    >
+    <button class="predictive-search__submit" type="submit">Search</button>
+  </form>
+  <div id="PredictiveSearchResults" class="predictive-search__results" hidden></div>
+</predictive-search>

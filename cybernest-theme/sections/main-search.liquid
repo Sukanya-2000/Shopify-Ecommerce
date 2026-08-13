@@ -1,6 +1,12 @@
-<main class="page-section">
+<main class="page-section search-results">
   <div class="container stack">
-    <h1>Search</h1>
+    <h1>
+      {% if search.performed %}
+        Search results for "{{ search.terms | escape }}"
+      {% else %}
+        Search CyberNest
+      {% endif %}
+    </h1>
 
     <form action="{{ routes.search_url }}" method="get" role="search" class="grid">
       <div class="col-9">
@@ -18,18 +24,32 @@
     </form>
 
     {% if search.performed %}
+      <p>{{ search.results_count }} result{% unless search.results_count == 1 %}s{% endunless %}</p>
+
       {% if search.results_count > 0 %}
-        <div class="grid">
+        {% paginate search.results by 12 %}
+        <div class="product-grid">
           {% for item in search.results %}
-            <article class="col-4 stack">
-              <a href="{{ item.url }}">
-                <h2>{{ item.title }}</h2>
-              </a>
-            </article>
+            {% if item.object_type == 'product' %}
+              {% render 'product-card', product: item %}
+            {% endif %}
           {% endfor %}
         </div>
+        {% render 'pagination', paginate: paginate %}
+        {% endpaginate %}
       {% else %}
-        <p>No results found.</p>
+        <div class="stack">
+          <p>No products found for "{{ search.terms | escape }}".</p>
+          {% assign fallback_collection = collections.best-sellers | default: collections.all %}
+          {% if fallback_collection.products_count > 0 %}
+            <h2>Best sellers</h2>
+            <div class="product-grid">
+              {% for product in fallback_collection.products limit: 4 %}
+                {% render 'product-card', product: product %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
       {% endif %}
     {% endif %}
   </div>

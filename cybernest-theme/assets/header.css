@@ -35,15 +35,105 @@
 }
 
 .site-header__search {
+  position: relative;
   display: flex;
   min-height: 48px;
   flex: 1;
   align-items: center;
-  padding-inline: var(--space-3);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-bg);
   color: var(--color-muted);
+}
+
+.predictive-search,
+.predictive-search__form {
+  width: 100%;
+}
+
+.predictive-search__form {
+  display: flex;
+}
+
+.predictive-search__input {
+  width: 100%;
+  min-height: 48px;
+  padding-inline: var(--space-3);
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+}
+
+.predictive-search__input:focus {
+  outline: none;
+}
+
+.predictive-search__submit {
+  padding-inline: var(--space-3);
+  border: 0;
+  border-inline-start: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-secondary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.predictive-search__results {
+  position: absolute;
+  inset-block-start: calc(100% + var(--space-1));
+  inset-inline: 0;
+  z-index: 25;
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 var(--space-2) var(--space-5) color-mix(in srgb, var(--color-primary) 15%, transparent);
+}
+
+.predictive-search__heading {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.predictive-search__list {
+  display: grid;
+  gap: var(--space-1);
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.predictive-search__item,
+.predictive-search__all,
+.predictive-search__empty a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.predictive-search__item {
+  min-height: 44px;
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+}
+
+.predictive-search__item.is-active,
+.predictive-search__item:hover,
+.predictive-search__item:focus-visible {
+  background: var(--color-bg);
+}
+
+.predictive-search__item img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
 }
 
 .site-header__actions,
