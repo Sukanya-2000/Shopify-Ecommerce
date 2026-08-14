@@ -1,38 +1,67 @@
-<main class="page-section">
+<cart-page class="page-section cart-page" data-cart-page>
   <div class="container stack">
     <h1>Your cart</h1>
 
-    {% if cart.item_count > 0 %}
-      <form action="{{ routes.cart_url }}" method="post" class="stack">
+    <div class="cart-page__empty" data-cart-page-empty {% if cart.item_count > 0 %}hidden{% endif %}>
+      <p>Your cart is empty.</p>
+      <a class="btn" href="{{ routes.all_products_collection_url }}">Continue Shopping</a>
+    </div>
+
+    <div data-cart-page-content {% if cart.item_count == 0 %}hidden{% endif %}>
+      <div class="cart-page__items" data-cart-page-items>
         {% for item in cart.items %}
-          <div class="grid">
-            <div class="col-8">
+          <div class="cart-page__item" data-cart-item>
+            <a class="cart-page__media" href="{{ item.url }}">
+              {% if item.image %}
+                {{ item.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: item.image.alt }}
+              {% endif %}
+            </a>
+            <div class="cart-page__details">
               <a href="{{ item.url }}">{{ item.product.title }}</a>
-              <p>{{ item.final_line_price | money }}</p>
+              {% unless item.variant.title == 'Default Title' %}
+                <p>{{ item.variant.title }}</p>
+              {% endunless %}
+              <button class="cart-link-button" type="button" data-cart-remove data-line-key="{{ item.key }}">Remove</button>
             </div>
-            <div class="col-4">
-              <input
-                class="input"
-                type="number"
-                name="updates[]"
-                value="{{ item.quantity }}"
-                min="0"
-                aria-label="Quantity for {{ item.product.title | escape }}"
-              >
-            </div>
+            <label class="cart-page__quantity">
+              <span class="visually-hidden">Quantity for {{ item.product.title | escape }}</span>
+              <input class="input" type="number" min="0" value="{{ item.quantity }}" data-cart-quantity data-line-key="{{ item.key }}">
+            </label>
+            <p class="cart-page__price">{{ item.final_line_price | money }}</p>
           </div>
         {% endfor %}
+      </div>
 
-        <p>Total: {{ cart.total_price | money }}</p>
-        <button class="btn btn--secondary" type="submit" name="update">Update cart</button>
-        <button class="btn" type="submit" name="checkout">Checkout</button>
-      </form>
-    {% else %}
-      <p>Your cart is empty.</p>
-      <a class="btn" href="{{ routes.all_products_collection_url }}">Start shopping</a>
-    {% endif %}
+      {% form 'cart', cart, class: 'cart-page__note-form' %}
+        <label for="CartNote">Order notes</label>
+        <textarea class="input cart-page__note" id="CartNote" name="note">{{ cart.note }}</textarea>
+      {% endform %}
+
+      <div class="cart-page__summary">
+        <div class="cart-page__subtotal">
+          <span>Subtotal</span>
+          <strong data-cart-page-subtotal>{{ cart.total_price | money }}</strong>
+        </div>
+        <p>Taxes and shipping are calculated at checkout.</p>
+        <div class="button-row">
+          <a class="btn btn--secondary" href="{{ routes.all_products_collection_url }}">Continue Shopping</a>
+          <form action="{{ routes.cart_url }}" method="post">
+            <button class="btn" type="submit" name="checkout">Checkout</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="cart-page__addons">
+        <h2>Recommended add-ons</h2>
+        {% comment %}
+          Product recommendations are deferred on this branch because no Day 5 recommendations section exists on develop.
+          This placeholder keeps the section ready without adding a duplicate recommendations implementation today.
+        {% endcomment %}
+        <p>Recommended add-ons are coming soon.</p>
+      </section>
+    </div>
   </div>
-</main>
+</cart-page>
 
 {% schema %}
 {

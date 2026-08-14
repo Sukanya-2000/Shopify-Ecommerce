@@ -9,15 +9,9 @@
     {% if collection.products_count > 0 %}
       <div class="grid">
         {% for product in collection.products %}
-          <article class="col-4 stack">
-            <a href="{{ product.url }}">
-              {% if product.featured_image %}
-                {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.featured_image.alt }}
-              {% endif %}
-              <h2>{{ product.title }}</h2>
-            </a>
-            <p>{{ product.price | money }}</p>
-          </article>
+          <div class="col-4">
+            {% render 'product-card', product: product %}
+          </div>
         {% endfor %}
       </div>
     {% else %}

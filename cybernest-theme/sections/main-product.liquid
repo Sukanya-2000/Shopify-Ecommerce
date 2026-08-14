@@ -25,6 +25,17 @@
             {% endif %}
           </button>
         {% endform %}
+
+        <button
+          class="btn btn--secondary"
+          type="button"
+          data-wishlist-toggle
+          data-product-id="{{ product.id }}"
+          data-product-handle="{{ product.handle }}"
+          aria-pressed="false"
+        >
+          Save to wishlist
+        </button>
       </div>
     </div>
   </div>

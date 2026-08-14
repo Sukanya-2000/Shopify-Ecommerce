@@ -15,13 +15,17 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'homepage.css' | asset_url | stylesheet_tag }}
+    {{ 'cart.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'header.js' | asset_url }}" defer></script>
     <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
+    <script src="{{ 'cart.js' | asset_url }}" defer></script>
+    <script src="{{ 'wishlist.js' | asset_url }}" defer></script>
     {{ content_for_header }}
   </head>
   <body>
     {% section 'header' %}
     {% section 'header-mobile-nav' %}
     {{ content_for_layout }}
+    {% render 'cart-drawer' %}
   </body>
 </html>

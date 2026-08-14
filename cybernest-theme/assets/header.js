@@ -28,4 +28,3 @@ if (mobileNav && openButton) {
 }
 
 // TODO Day 5: wire predictive search behavior into the header search placeholders.
-// TODO Day 6: update [data-cart-count] when cart state changes without a full page load.

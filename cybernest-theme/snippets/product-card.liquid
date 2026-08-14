@@ -1,5 +1,3 @@
-{% comment %} TODO Day 4: full product-card with badges, hover image, quick-add {% endcomment %}
-
 <article class="product-card">
   <a class="product-card__link stack" href="{{ product.url }}">
     <div class="product-card__media">
@@ -23,5 +21,23 @@
       <p class="product-card__price">{{ product.price | money }}</p>
     </div>
   </a>
-  <button class="btn btn--sm product-card__button" type="button" disabled>Coming soon</button>
+  <div class="product-card__actions">
+    {% form 'product', product, class: 'product-card__form' %}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <button class="btn btn--sm product-card__button" type="submit" {% unless product.available %}disabled{% endunless %}>
+        {% if product.available %}Add{% else %}Sold out{% endif %}
+      </button>
+    {% endform %}
+    <button
+      class="product-card__wishlist"
+      type="button"
+      data-wishlist-toggle
+      data-product-id="{{ product.id }}"
+      data-product-handle="{{ product.handle }}"
+      aria-label="Add {{ product.title | escape }} to wishlist"
+      aria-pressed="false"
+    >
+      <span aria-hidden="true">Save</span>
+    </button>
+  </div>
 </article>
