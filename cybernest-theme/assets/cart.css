@@ -1,0 +1,213 @@
+.cart-drawer[hidden] {
+  display: none;
+}
+
+.cart-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+}
+
+.cart-drawer__overlay {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: color-mix(in srgb, var(--color-primary) 45%, transparent);
+  cursor: pointer;
+}
+
+.cart-drawer__panel {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  display: flex;
+  width: min(100vw, 420px);
+  flex-direction: column;
+  border-inline-start: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transform: translateX(0);
+  transition: transform 180ms ease;
+}
+
+.cart-drawer__header,
+.cart-drawer__footer {
+  padding: var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.cart-drawer__header,
+.cart-drawer__subtotal,
+.cart-page__subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.cart-drawer__close,
+.cart-link-button,
+.product-card__wishlist {
+  border: 0;
+  background: transparent;
+  color: var(--color-secondary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cart-drawer__items {
+  display: grid;
+  flex: 1;
+  align-content: start;
+  gap: var(--space-3);
+  overflow-y: auto;
+  padding: var(--space-3);
+}
+
+.cart-drawer__item,
+.cart-page__item {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: var(--space-3);
+  padding-block-end: var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.cart-drawer__media img,
+.cart-page__media img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.cart-drawer__details,
+.cart-page__details {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.cart-drawer__details a,
+.cart-page__details a {
+  color: var(--color-text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cart-drawer__details p,
+.cart-page__details p,
+.cart-drawer__shipping,
+.cart-page__summary p,
+.cart-page__addons p {
+  color: var(--color-muted);
+}
+
+.cart-drawer__quantity,
+.cart-page__quantity {
+  width: 96px;
+}
+
+.cart-drawer__price,
+.cart-page__price {
+  font-weight: 700;
+}
+
+.cart-drawer__empty {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+}
+
+.cart-drawer__error {
+  margin: var(--space-3);
+  padding: var(--space-2);
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-sm);
+  color: var(--color-error);
+}
+
+.cart-drawer__footer {
+  display: grid;
+  gap: var(--space-3);
+  margin-block-start: auto;
+  border-block-start: 1px solid var(--color-border);
+  border-block-end: 0;
+}
+
+.cart-drawer__actions,
+.product-card__actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.cart-drawer__actions > * {
+  flex: 1;
+}
+
+.cart-page__items {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cart-page__item {
+  grid-template-columns: 96px minmax(0, 1fr) 120px max-content;
+  align-items: center;
+}
+
+.cart-page__note-form,
+.cart-page__summary,
+.cart-page__addons {
+  display: grid;
+  gap: var(--space-2);
+  padding-block-start: var(--space-3);
+}
+
+.cart-page__note {
+  min-height: 120px;
+  padding-block: var(--space-2);
+}
+
+.wishlist-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+}
+
+.wishlist-card {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+}
+
+.wishlist-card img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.product-card__wishlist {
+  min-width: 40px;
+  min-height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.product-card__wishlist.is-active,
+[data-wishlist-toggle].is-active {
+  color: var(--color-sale);
+}
+
+@media screen and (max-width: 47.99em) {
+  .cart-page__item {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .cart-drawer__panel {
+    transition-duration: 0.01ms;
+  }
+}

@@ -1,0 +1,30 @@
+<cart-drawer class="cart-drawer" hidden>
+  <button class="cart-drawer__overlay" type="button" data-cart-drawer-close aria-label="Close cart"></button>
+
+  <aside class="cart-drawer__panel" aria-labelledby="CartDrawerTitle" role="dialog" aria-modal="true">
+    <div class="cart-drawer__header">
+      <h2 id="CartDrawerTitle">Your cart</h2>
+      <button class="cart-drawer__close" type="button" data-cart-drawer-close aria-label="Close cart">Close</button>
+    </div>
+
+    <p class="cart-drawer__error" data-cart-error hidden></p>
+    <div class="cart-drawer__items" data-cart-items></div>
+
+    <div class="cart-drawer__empty" data-cart-empty hidden>
+      <p>Your cart is empty.</p>
+      <a class="btn btn--secondary" href="{{ routes.all_products_collection_url }}">Continue Shopping</a>
+    </div>
+
+    <div class="cart-drawer__footer">
+      <p class="cart-drawer__shipping" data-cart-shipping>Free-shipping progress will appear here when a threshold is configured.</p>
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <strong data-cart-subtotal>{{ cart.total_price | money }}</strong>
+      </div>
+      <div class="cart-drawer__actions">
+        <a class="btn btn--secondary" href="{{ routes.cart_url }}">View Cart</a>
+        <a class="btn" href="{{ routes.cart_url }}?checkout=1">Checkout</a>
+      </div>
+    </div>
+  </aside>
+</cart-drawer>

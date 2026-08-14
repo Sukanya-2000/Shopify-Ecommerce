@@ -6,7 +6,6 @@ class ProductPage {
     this.moneyFormat = window.Shopify?.money_format || '${{amount}}';
     this.bindOptions();
     this.bindGallery();
-    this.bindSubmit();
     this.updateUnavailableOptions();
   }
 
@@ -27,12 +26,6 @@ class ProductPage {
           thumb.classList.toggle('is-active', thumb === button);
         });
       });
-    });
-  }
-
-  bindSubmit() {
-    this.form?.addEventListener('submit', () => {
-      // TODO: wire cart drawer open on successful add - built Day 6
     });
   }
 

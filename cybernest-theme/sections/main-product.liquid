@@ -94,7 +94,16 @@
             <button class="btn product-actions__submit" type="submit" data-add-to-cart {% unless current_variant.available %}disabled{% endunless %}>
               {% if current_variant.available %}Add to Cart{% else %}Sold Out{% endif %}
             </button>
-            <button class="btn btn--secondary" type="button" data-wishlist-toggle data-product-id="{{ product.id }}">Wishlist</button>
+            <button
+              class="btn btn--secondary"
+              type="button"
+              data-wishlist-toggle
+              data-product-id="{{ product.id }}"
+              data-product-handle="{{ product.handle }}"
+              aria-pressed="false"
+            >
+              Wishlist
+            </button>
           </div>
 
           {{ form | payment_button }}
