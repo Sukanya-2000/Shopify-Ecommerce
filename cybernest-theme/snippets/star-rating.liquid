@@ -1,0 +1,11 @@
+{% liquid
+  assign rating = product.metafields.reviews.rating.value.rating | default: 0
+  assign rating_count = product.metafields.reviews.rating_count | default: 0
+%}
+
+<div class="star-rating" aria-label="{{ rating }} out of 5 stars">
+  <span aria-hidden="true">★★★★★</span>
+  {% if rating_count != 0 %}
+    <span>{{ rating_count }} review{% unless rating_count == 1 %}s{% endunless %}</span>
+  {% endif %}
+</div>
