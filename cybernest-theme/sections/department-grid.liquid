@@ -1,11 +1,11 @@
-<section class="page-section">
+<section class="page-section" id="departments" data-local-departments>
   <div class="container">
     {%- if section.settings.heading != blank -%}
       <div class="section-heading">
         <h2>{{ section.settings.heading }}</h2>
       </div>
     {%- endif -%}
-    <div class="department-grid">
+    <div class="department-grid" data-local-departments-grid>
       {%- for block in section.blocks -%}
         <a class="department-card" href="{{ block.settings.link | default: routes.all_products_collection_url }}" {{ block.shopify_attributes }}>
           <div class="department-card__media">

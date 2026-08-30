@@ -1,6 +1,10 @@
 {%- assign featured_collection = collections[section.settings.collection] -%}
 
-<section class="page-section">
+<section
+  class="page-section"
+  data-local-featured="{{ section.settings.heading | escape }}"
+  {% if section.settings.heading contains 'Deals' %}id="top-deals"{% endif %}
+>
   <div class="container">
     <div class="section-heading">
       {%- if section.settings.heading != blank -%}
@@ -8,13 +12,14 @@
       {%- endif -%}
     </div>
     {%- if featured_collection != blank and featured_collection.products_count > 0 -%}
-      <div class="product-grid">
+      <div class="product-grid" data-local-featured-grid>
         {%- for product in featured_collection.products limit: section.settings.count -%}
           {% render 'product-card', product: product %}
         {%- endfor -%}
       </div>
     {%- else -%}
-      <p class="featured-collection__empty">Choose a collection with products to populate this section.</p>
+      <div class="product-grid" data-local-featured-grid></div>
+      <p class="featured-collection__empty">Start the backend to populate this section from the seeded catalog.</p>
     {%- endif -%}
   </div>
 </section>

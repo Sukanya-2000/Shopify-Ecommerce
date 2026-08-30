@@ -45,9 +45,7 @@
         <p>Taxes and shipping are calculated at checkout.</p>
         <div class="button-row">
           <a class="btn btn--secondary" href="{{ routes.all_products_collection_url }}">Continue Shopping</a>
-          <form action="{{ routes.cart_url }}" method="post">
-            <button class="btn" type="submit" name="checkout">Checkout</button>
-          </form>
+          <button class="btn" type="button" data-backend-checkout>Checkout</button>
         </div>
       </div>
 

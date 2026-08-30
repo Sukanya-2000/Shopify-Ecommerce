@@ -28,12 +28,47 @@
 
 .homepage-hero {
   position: relative;
-  min-height: 560px;
+  min-height: 680px;
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: var(--color-primary);
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 78% 18%, color-mix(in srgb, var(--color-secondary) 42%, transparent), transparent 28rem),
+    radial-gradient(circle at 20% 82%, color-mix(in srgb, var(--color-accent) 36%, transparent), transparent 24rem),
+    linear-gradient(135deg, color-mix(in srgb, var(--color-primary) 92%, #05070d), #101827 56%, #172034);
   color: var(--color-surface);
+}
+
+.homepage-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--color-surface) 9%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-surface) 9%, transparent) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 78%, transparent);
+  opacity: 0.22;
+}
+
+.homepage-hero::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  z-index: -1;
+  height: 190px;
+  content: "";
+  background: linear-gradient(0deg, var(--color-bg), transparent);
+}
+
+.homepage-hero--fallback-image {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--color-primary) 66%, transparent), color-mix(in srgb, var(--color-primary) 66%, transparent)),
+    var(--hero-fallback-image);
+  background-position: center;
+  background-size: cover;
 }
 
 .homepage-hero__media,
@@ -47,8 +82,10 @@
   position: absolute;
   inset: 0;
   content: "";
-  background: var(--color-primary);
-  opacity: 0.58;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--color-primary) 88%, transparent), color-mix(in srgb, var(--color-primary) 48%, transparent)),
+    linear-gradient(0deg, color-mix(in srgb, var(--color-primary) 64%, transparent), transparent);
+  opacity: 0.86;
 }
 
 .homepage-hero__media img,
@@ -58,12 +95,44 @@
   object-fit: cover;
 }
 
-.homepage-hero__content,
+.homepage-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: var(--space-5);
+  align-items: center;
+  padding-block: calc(var(--space-5) + var(--space-4));
+}
+
+.homepage-hero__content {
+  position: relative;
+  display: grid;
+  gap: var(--space-4);
+  max-width: 42rem;
+}
+
 .promo-banner__content {
   position: relative;
   z-index: 1;
   max-width: 42rem;
   padding-block: var(--space-5);
+}
+
+.homepage-hero__eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 32px;
+  padding-inline: var(--space-3);
+  border: 1px solid color-mix(in srgb, var(--color-surface) 26%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-surface) 12%, transparent);
+  color: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  backdrop-filter: blur(18px);
 }
 
 .homepage-hero h1,
@@ -72,8 +141,9 @@
 }
 
 .homepage-hero h1 {
-  max-width: 12ch;
+  max-width: 13ch;
   font-size: 3rem;
+  line-height: 0.95;
 }
 
 .homepage-hero__description,
@@ -83,9 +153,160 @@
   color: var(--color-muted);
 }
 
+.is-local-featured-ready .featured-collection__empty {
+  display: none;
+}
+
 .homepage-hero__description {
-  max-width: 36rem;
+  max-width: 39rem;
+  color: color-mix(in srgb, var(--color-surface) 78%, transparent);
   font-size: 1.125rem;
+}
+
+.homepage-hero__actions {
+  gap: var(--space-3);
+}
+
+.homepage-hero__primary {
+  box-shadow: 0 18px 44px color-mix(in srgb, var(--color-accent) 34%, transparent);
+}
+
+.homepage-hero__proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  color: color-mix(in srgb, var(--color-surface) 76%, transparent);
+}
+
+.homepage-hero__proof span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding-inline: var(--space-3);
+  border: 1px solid color-mix(in srgb, var(--color-surface) 18%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-surface) 8%, transparent);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.homepage-hero__showcase {
+  position: relative;
+  min-height: 420px;
+  display: grid;
+  align-items: center;
+}
+
+.homepage-hero__device {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-surface) 20%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-surface) 13%, transparent);
+  box-shadow: 0 34px 90px color-mix(in srgb, #000 46%, transparent);
+  backdrop-filter: blur(20px);
+}
+
+.homepage-hero__device-top {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border-block-end: 1px solid color-mix(in srgb, var(--color-surface) 14%, transparent);
+}
+
+.homepage-hero__device-top span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-surface) 54%, transparent);
+}
+
+.homepage-hero__device-screen {
+  display: grid;
+  gap: var(--space-4);
+  min-height: 360px;
+  padding: var(--space-4);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--color-surface) 14%, transparent), transparent),
+    color-mix(in srgb, var(--color-primary) 70%, transparent);
+}
+
+.homepage-hero__deal-card {
+  display: grid;
+  gap: var(--space-2);
+  align-self: start;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.homepage-hero__deal-card strong {
+  max-width: 12rem;
+  font-size: 1.6rem;
+  line-height: 1.05;
+}
+
+.homepage-hero__deal-card span:last-child {
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.homepage-hero__deal-label {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.homepage-hero__product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-self: end;
+}
+
+.homepage-hero__product-grid span {
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--color-surface) 18%, transparent);
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(circle at 50% 36%, color-mix(in srgb, var(--color-accent) 44%, transparent), transparent 34%),
+    color-mix(in srgb, var(--color-surface) 12%, transparent);
+}
+
+.homepage-hero__floating-card {
+  position: absolute;
+  display: grid;
+  gap: var(--space-1);
+  width: min(180px, 44vw);
+  padding: var(--space-3);
+  border: 1px solid color-mix(in srgb, var(--color-surface) 22%, transparent);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  color: var(--color-primary);
+  box-shadow: 0 20px 50px color-mix(in srgb, #000 28%, transparent);
+}
+
+.homepage-hero__floating-card span {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.homepage-hero__floating-card--top {
+  inset-block-start: 18px;
+  inset-inline-end: 0;
+}
+
+.homepage-hero__floating-card--bottom {
+  inset-block-end: 32px;
+  inset-inline-start: -8px;
 }
 
 .homepage-hero .btn--secondary,
@@ -102,6 +323,10 @@
   margin-block-end: var(--space-4);
 }
 
+.section-heading h2 {
+  font-size: 2rem;
+}
+
 .department-grid,
 .product-grid,
 .trust-badges {
@@ -116,9 +341,14 @@
 .department-card,
 .product-card,
 .trust-badge {
-  border: 1px solid var(--color-border);
+  border: 1px solid color-mix(in srgb, var(--color-border) 76%, transparent);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+  box-shadow: 0 16px 42px color-mix(in srgb, var(--color-primary) 7%, transparent);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
 }
 
 .department-card {
@@ -127,10 +357,22 @@
   text-decoration: none;
 }
 
+.department-card:hover,
+.product-card:hover,
+.trust-badge:hover {
+  border-color: color-mix(in srgb, var(--color-secondary) 42%, var(--color-border));
+  box-shadow: 0 22px 58px color-mix(in srgb, var(--color-primary) 12%, transparent);
+  transform: translateY(-3px);
+}
+
 .department-card__media,
 .product-card__media {
+  position: relative;
   aspect-ratio: 1;
-  background: var(--color-bg);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--color-accent) 20%, transparent), transparent 42%),
+    var(--color-bg);
 }
 
 .department-card__media img,
@@ -139,6 +381,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 260ms ease;
+}
+
+.department-card:hover img,
+.product-card:hover img {
+  transform: scale(1.045);
 }
 
 .department-card__title {
@@ -154,10 +402,13 @@
 .product-card {
   display: grid;
   gap: var(--space-2);
+  overflow: hidden;
   padding: var(--space-2);
 }
 
 .product-card__link {
+  display: grid;
+  min-width: 0;
   color: inherit;
   text-decoration: none;
 }
@@ -165,6 +416,7 @@
 .product-card__title {
   color: var(--color-primary);
   font-weight: 700;
+  line-height: 1.22;
 }
 
 .product-card__vendor {
@@ -173,11 +425,37 @@
 }
 
 .product-card__price {
+  color: var(--color-primary);
   font-weight: 700;
+}
+
+.product-card__stock {
+  width: max-content;
+  margin: 0;
+  padding: .28rem .55rem;
+  border: 1px solid #fed7aa;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #c2410c;
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.product-card__badges {
+  position: absolute;
+  inset-block-start: var(--space-2);
+  inset-inline-start: var(--space-2);
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
 }
 
 .product-card__button {
   width: 100%;
+}
+
+.product-card__button:disabled {
   opacity: 0.64;
   cursor: not-allowed;
 }
@@ -188,7 +466,9 @@
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: var(--color-primary);
+  background:
+    radial-gradient(circle at 78% 20%, color-mix(in srgb, var(--color-accent) 36%, transparent), transparent 22rem),
+    linear-gradient(135deg, var(--color-primary), #152033);
   color: var(--color-surface);
 }
 
@@ -207,13 +487,31 @@
 .brand-logo {
   flex: 0 0 160px;
   display: grid;
+  gap: var(--space-1);
   min-height: 96px;
   place-items: center;
   padding: var(--space-3);
-  border: 1px solid var(--color-border);
+  border: 1px solid color-mix(in srgb, var(--color-border) 76%, transparent);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+  box-shadow: 0 14px 34px color-mix(in srgb, var(--color-primary) 6%, transparent);
   scroll-snap-align: start;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.brand-logo:hover {
+  border-color: color-mix(in srgb, var(--color-secondary) 42%, var(--color-border));
+  transform: translateY(-2px);
+}
+
+.brand-logo--text {
+  flex-basis: 190px;
+  align-content: center;
+  color: var(--color-primary);
+  text-align: center;
+  text-decoration: none;
 }
 
 .brand-logo__image {
@@ -221,18 +519,47 @@
   height: 56px;
 }
 
+.brand-logo__fallback,
+.brand-logo__mark {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--brand-color, var(--color-primary));
+  color: var(--color-surface);
+  font-weight: 800;
+}
+
+.brand-logo__name {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.brand-logo__tagline {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+}
+
 .brand-logo__image img {
   object-fit: contain;
 }
 
 .newsletter-section {
-  background: var(--color-surface);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--color-secondary) 8%, var(--color-surface)), var(--color-surface)),
+    var(--color-surface);
 }
 
 .newsletter-section__inner {
   display: grid;
   gap: var(--space-4);
   align-items: center;
+  padding: var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--color-border) 76%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-surface) 86%, transparent);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--color-primary) 9%, transparent);
 }
 
 .newsletter-form {
@@ -268,7 +595,15 @@
 
 @media screen and (min-width: 48em) {
   .homepage-hero h1 {
-    font-size: 4rem;
+    font-size: 4.6rem;
+  }
+
+  .homepage-hero__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.78fr);
+  }
+
+  .homepage-hero__showcase {
+    min-height: 520px;
   }
 
   .department-grid {
@@ -289,6 +624,10 @@
 }
 
 @media screen and (min-width: 72em) {
+  .homepage-hero h1 {
+    font-size: 5.8rem;
+  }
+
   .department-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }

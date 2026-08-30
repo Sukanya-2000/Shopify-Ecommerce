@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CyberNest Admin</title>
+    <link rel="stylesheet" href="/admin/styles.css?v=admin-actions-2">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">CN</span><div><strong>CyberNest</strong><small>Admin Console</small></div></div>
+      <nav>
+        <button class="nav-button active" data-view="overview">Overview</button>
+        <button class="nav-button" data-view="products">Products</button>
+        <button class="nav-button" data-view="categories">Categories</button>
+        <button class="nav-button" data-view="users">Users</button>
+        <button class="nav-button" data-view="theme">Theme</button>
+      </nav>
+      <button id="logoutButton" class="ghost">Log out</button>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div><p class="eyebrow">Store operations</p><h1 id="pageTitle">Overview</h1></div>
+        <div class="topbar-actions">
+          <div id="connectionStatus" class="status">Checking API</div>
+          <button id="topLogoutButton" class="logout-action" type="button">Log out</button>
+        </div>
+      </header>
+      <section id="loginPanel" class="login-panel">
+        <form id="loginForm" class="panel compact">
+          <h2>Admin Login</h2>
+          <label>Email <input name="email" type="email" value="admin@cybernest.local" required></label>
+          <label>Password <input name="password" type="password" value="Password123!" required></label>
+          <button type="submit">Sign in</button>
+          <p id="loginMessage" class="message"></p>
+        </form>
+      </section>
+      <section id="appPanel" class="hidden">
+        <section id="overviewView" class="view">
+          <div id="metricGrid" class="metric-grid"></div>
+          <div class="panel"><h2>Recent Catalog</h2><div id="recentProducts" class="recent-products"></div></div>
+        </section>
+        <section id="productsView" class="view hidden">
+          <div class="split">
+            <form id="productForm" class="panel">
+              <div class="form-head"><h2 id="productFormTitle">Add Product</h2><button type="button" id="newProductButton" class="ghost">New</button></div>
+              <input name="originalHandle" type="hidden">
+              <div class="grid-two">
+                <label>Title <input name="title" required></label>
+                <label>Handle <input name="handle" placeholder="auto-generated"></label>
+                <label>SKU <input name="sku" required></label>
+                <label>Status <select name="status"><option value="active">Active</option><option value="draft">Draft</option><option value="archived">Archived</option></select></label>
+                <label>Price <input name="price" type="number" min="0" step="0.01" required></label>
+                <label>Compare At <input name="compareAtPrice" type="number" min="0" step="0.01"></label>
+                <label>Quantity (pcs) <input name="quantity" type="number" min="0" step="1" inputmode="numeric" data-quantity-input><small id="quantityPreview" class="field-note">0 pcs</small></label>
+                <label>Type <input name="type" placeholder="Smart Home"></label>
+                <label>Vendor <input name="vendor" value="CyberNest"></label>
+                <label>Category <select name="category" data-category-select><option value="">Uncategorized</option></select></label>
+              </div>
+              <label>Tags <input name="tags" placeholder="smart home, best seller"></label>
+              <label>Image URL <input name="imageUrl" placeholder="https://..."></label>
+              <label>Description <textarea name="descriptionHtml" rows="4"></textarea></label>
+              <div class="actions"><button type="submit">Save Product</button></div>
+              <p id="productMessage" class="message"></p>
+            </form>
+            <div class="panel">
+              <div class="form-head"><h2>Products</h2><input id="productSearch" class="search" placeholder="Search catalog"></div>
+              <div id="productList" class="product-list"></div>
+            </div>
+          </div>
+        </section>
+        <section id="categoriesView" class="view hidden">
+          <div class="split categories-layout">
+            <form id="categoryForm" class="panel">
+              <div class="form-head"><h2 id="categoryFormTitle">Add Category</h2><button type="button" id="newCategoryButton" class="ghost">New</button></div>
+              <input name="originalName" type="hidden">
+              <label>Category Name <input name="name" placeholder="Gaming accessories" required></label>
+              <div class="actions"><button type="submit">Save Category</button></div>
+              <p id="categoryMessage" class="message"></p>
+            </form>
+            <div class="panel">
+              <div class="form-head"><h2>Categories</h2><input id="categorySearch" class="search" placeholder="Search categories"></div>
+              <div id="categoryList" class="category-list"></div>
+            </div>
+          </div>
+        </section>
+        <section id="usersView" class="view hidden">
+          <div class="split users-layout">
+            <div class="panel">
+              <div class="form-head"><h2>Users</h2><input id="userSearch" class="search" placeholder="Search users"></div>
+              <div id="userList" class="user-list"></div>
+            </div>
+            <div class="panel">
+              <div id="userDetail" class="user-detail"></div>
+            </div>
+          </div>
+        </section>
+        <section id="themeView" class="view hidden">
+          <div class="split">
+            <form id="settingsForm" class="panel">
+              <h2>Website Theme Settings</h2>
+              <div class="grid-two">
+                <label>Store Name <input name="storeName"></label>
+                <label>Currency <select name="currency" data-currency-select></select></label>
+                <label>Tagline <input name="tagline"></label>
+                <label>Announcement <input name="announcement"></label>
+                <label>Support Email <input name="supportEmail" type="email"></label>
+                <label>Button Label <input name="buttonLabel"></label>
+                <label>Primary Color <input name="primaryColor" type="color"></label>
+                <label>Accent Color <input name="accentColor" type="color"></label>
+                <label>Secondary Color <input name="secondaryColor" type="color"></label>
+                <label>Button Text <input name="buttonTextColor" type="color"></label>
+                <label>Background <input name="backgroundColor" type="color"></label>
+                <label>Text Color <input name="textColor" type="color"></label>
+                <label>Surface Color <input name="surfaceColor" type="color"></label>
+                <label>Muted Text <input name="mutedColor" type="color"></label>
+                <label>Border Color <input name="borderColor" type="color"></label>
+                <label>Header Background <input name="headerBackgroundColor" type="color"></label>
+                <label>Header Text <input name="headerTextColor" type="color"></label>
+                <label>Corner Radius <input name="cornerRadius" type="number" min="0" max="28" step="1"></label>
+                <label>Contrast Mode <select name="contrastMode"><option value="soft">Soft</option><option value="balanced">Balanced</option><option value="high">High</option></select></label>
+              </div>
+              <label>Hero Title <input name="heroTitle"></label>
+              <label>Hero Subtitle <textarea name="heroSubtitle" rows="3"></textarea></label>
+              <label>Logo URL <input name="logoUrl"></label>
+              <label>Hero Image URL <input name="heroImageUrl"></label>
+              <button type="submit">Save Theme</button>
+              <p id="settingsMessage" class="message"></p>
+            </form>
+            <div class="preview" id="themePreview">
+              <div class="announcement"></div>
+              <div class="preview-hero"><div><p class="preview-tagline"></p><h2></h2><p class="preview-subtitle"></p><button></button></div></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/admin/app.js?v=admin-actions-2"></script>
+  </body>
+</html>
+
+
+

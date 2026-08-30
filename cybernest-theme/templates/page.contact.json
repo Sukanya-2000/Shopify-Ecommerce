@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "contact-page",
+      "settings": {
+        "heading": "Contact CyberNest",
+        "intro": "Need help choosing gear, tracking an order, or planning a setup? Send us a note and our support team will get back to you.",
+        "email": "support@cybernest.example",
+        "phone": "+1 (555) 014-2048",
+        "address": "245 Market Street, Suite 640, San Francisco, CA 94105",
+        "hours": "Monday to Friday, 9:00 AM - 6:00 PM PT"
+      }
+    }
+  },
+  "order": ["main"]
+}

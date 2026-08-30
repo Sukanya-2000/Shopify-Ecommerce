@@ -1,4 +1,4 @@
-<section class="homepage-hero">
+<section class="homepage-hero" data-homepage-hero>
   {%- if section.settings.desktop_image != blank -%}
     <picture class="homepage-hero__media">
       {%- if section.settings.mobile_image != blank -%}
@@ -16,21 +16,62 @@
       }}
     </picture>
   {%- endif -%}
-  <div class="container">
-    <div class="homepage-hero__content stack">
-      {%- if section.settings.heading != blank -%}
-        <h1>{{ section.settings.heading }}</h1>
+  <div class="container homepage-hero__inner">
+    <div class="homepage-hero__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="homepage-hero__eyebrow">{{ section.settings.eyebrow }}</p>
       {%- endif -%}
-      {%- if section.settings.description != blank -%}
-        <div class="homepage-hero__description">{{ section.settings.description }}</div>
-      {%- endif -%}
-      <div class="button-row">
-        {%- if section.settings.primary_cta_text != blank and section.settings.primary_cta_link != blank -%}
-          <a class="btn" href="{{ section.settings.primary_cta_link }}">{{ section.settings.primary_cta_text }}</a>
+      <div class="homepage-hero__copy stack">
+        {%- if section.settings.heading != blank -%}
+          <h1>{{ section.settings.heading }}</h1>
         {%- endif -%}
-        {%- if section.settings.secondary_cta_text != blank and section.settings.secondary_cta_link != blank -%}
-          <a class="btn btn--secondary" href="{{ section.settings.secondary_cta_link }}">{{ section.settings.secondary_cta_text }}</a>
+        {%- if section.settings.description != blank -%}
+          <div class="homepage-hero__description">{{ section.settings.description }}</div>
         {%- endif -%}
+        <div class="button-row homepage-hero__actions">
+          {%- if section.settings.primary_cta_text != blank -%}
+            <a class="btn homepage-hero__primary" href="{{ section.settings.primary_cta_link | default: '#top-deals' }}">{{ section.settings.primary_cta_text }}</a>
+          {%- endif -%}
+          {%- if section.settings.secondary_cta_text != blank -%}
+            <a class="btn btn--secondary" href="{{ section.settings.secondary_cta_link | default: '#departments' }}">{{ section.settings.secondary_cta_text }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="homepage-hero__proof" aria-label="Store highlights">
+        <span>{{ section.settings.proof_one }}</span>
+        <span>{{ section.settings.proof_two }}</span>
+        <span>{{ section.settings.proof_three }}</span>
+      </div>
+    </div>
+
+    <div class="homepage-hero__showcase" aria-hidden="true">
+      <div class="homepage-hero__device">
+        <div class="homepage-hero__device-top">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="homepage-hero__device-screen">
+          <div class="homepage-hero__deal-card">
+            <span class="homepage-hero__deal-label">Live deal</span>
+            <strong>{{ section.settings.featured_product }}</strong>
+            <span>{{ section.settings.featured_offer }}</span>
+          </div>
+          <div class="homepage-hero__product-grid">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="homepage-hero__floating-card homepage-hero__floating-card--top">
+        <span>New</span>
+        <strong>{{ section.settings.floating_stat }}</strong>
+      </div>
+      <div class="homepage-hero__floating-card homepage-hero__floating-card--bottom">
+        <span>Ships fast</span>
+        <strong>{{ section.settings.shipping_stat }}</strong>
       </div>
     </div>
   </div>
@@ -52,15 +93,21 @@
     },
     {
       "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Modern tech marketplace"
+    },
+    {
+      "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "CyberNest"
+      "default": "Upgrade your setup with smarter everyday tech."
     },
     {
       "type": "richtext",
       "id": "description",
       "label": "Description",
-      "default": "<p>Smart tech essentials for work, play, and everything between.</p>"
+      "default": "<p>Discover curated devices, accessories, and workspace essentials designed to make work, play, and everything between feel effortless.</p>"
     },
     {
       "type": "text",
@@ -83,6 +130,48 @@
       "type": "url",
       "id": "secondary_cta_link",
       "label": "Secondary CTA link"
+    },
+    {
+      "type": "text",
+      "id": "proof_one",
+      "label": "Proof point one",
+      "default": "Fast delivery"
+    },
+    {
+      "type": "text",
+      "id": "proof_two",
+      "label": "Proof point two",
+      "default": "Curated gear"
+    },
+    {
+      "type": "text",
+      "id": "proof_three",
+      "label": "Proof point three",
+      "default": "Secure checkout"
+    },
+    {
+      "type": "text",
+      "id": "featured_product",
+      "label": "Showcase product",
+      "default": "Studio-grade headphones"
+    },
+    {
+      "type": "text",
+      "id": "featured_offer",
+      "label": "Showcase offer",
+      "default": "Save up to 30% today"
+    },
+    {
+      "type": "text",
+      "id": "floating_stat",
+      "label": "Top showcase stat",
+      "default": "Fresh arrivals weekly"
+    },
+    {
+      "type": "text",
+      "id": "shipping_stat",
+      "label": "Bottom showcase stat",
+      "default": "2-4 day delivery"
     }
   ],
   "presets": [

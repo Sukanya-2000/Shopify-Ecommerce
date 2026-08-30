@@ -15,13 +15,17 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'header.css' | asset_url | stylesheet_tag }}
     {{ 'homepage.css' | asset_url | stylesheet_tag }}
+    {{ 'collection.css' | asset_url | stylesheet_tag }}
     {{ 'product-page.css' | asset_url | stylesheet_tag }}
     {{ 'cart.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'account-api.js' | asset_url }}" defer></script>
     <script src="{{ 'header.js' | asset_url }}" defer></script>
     <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
     <script src="{{ 'product-form.js' | asset_url }}" defer></script>
     <script src="{{ 'wishlist.js' | asset_url }}" defer></script>
+    <script src="{{ 'local-catalog.js' | asset_url }}" defer></script>
+    <script src="{{ 'local-home.js' | asset_url }}" defer></script>
     {{ content_for_header }}
   </head>
   <body>
@@ -31,3 +35,4 @@
     {% render 'cart-drawer' %}
   </body>
 </html>
+

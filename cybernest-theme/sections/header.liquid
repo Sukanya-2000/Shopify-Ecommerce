@@ -13,8 +13,10 @@
     </div>
 
     <div class="site-header__actions" aria-label="Store links">
-      <a class="site-header__action" href="{{ routes.account_url }}">Account</a>
-      <a class="site-header__action" href="/pages/wishlist">Wishlist</a>
+      <span class="site-header__greeting" data-account-greeting hidden></span>
+      <a class="site-header__action" href="#account" data-account-open data-account-label>Login</a>
+      <a class="site-header__action" href="#wishlist" data-wishlist-open>Wishlist</a>
+      <button class="site-header__action site-header__logout" type="button" data-account-logout hidden>Logout</button>
       <a class="site-header__action site-header__cart" href="{{ routes.cart_url }}">
         Cart
         <span class="site-header__cart-count" data-cart-count>{{ cart.item_count }}</span>

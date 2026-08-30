@@ -59,6 +59,10 @@
           <span class="product-price__current" data-current-price>{{ price | money }}</span>
         </div>
 
+        {% if current_variant.inventory_management != blank and current_variant.inventory_quantity > 0 and current_variant.inventory_quantity < 5 %}
+          <p class="product-card__stock">{{ current_variant.inventory_quantity }} pcs left</p>
+        {% endif %}
+
         {% form 'product', product, class: 'product-form stack' %}
           <input type="hidden" name="id" value="{{ current_variant.id }}" data-variant-id>
 

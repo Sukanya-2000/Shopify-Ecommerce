@@ -3,8 +3,10 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  border-block-end: 1px solid var(--color-border);
-  background: var(--color-surface);
+  border-block-end: 1px solid color-mix(in srgb, var(--color-border) 64%, transparent);
+  background: color-mix(in srgb, var(--color-surface) 86%, transparent);
+  box-shadow: 0 12px 34px color-mix(in srgb, var(--color-primary) 8%, transparent);
+  backdrop-filter: blur(18px);
 }
 
 .site-header--desktop {
@@ -25,6 +27,7 @@
   align-items: center;
   color: var(--color-primary);
   font-family: var(--font-heading);
+  font-size: 1.35rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -40,10 +43,11 @@
   min-height: 48px;
   flex: 1;
   align-items: center;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-bg);
+  border: 1px solid color-mix(in srgb, var(--color-border) 72%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-bg) 70%, var(--color-surface));
   color: var(--color-muted);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--color-surface) 80%, transparent);
 }
 
 .predictive-search,
@@ -89,9 +93,13 @@
   gap: var(--space-3);
   padding: var(--space-3);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   background: var(--color-surface);
-  box-shadow: 0 var(--space-2) var(--space-5) color-mix(in srgb, var(--color-primary) 15%, transparent);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+
+.predictive-search__results[hidden] {
+  display: none;
 }
 
 .predictive-search__heading {
@@ -143,6 +151,17 @@
   gap: var(--space-2);
 }
 
+.site-header__greeting {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+.site-header__greeting[hidden],
+.site-header__logout[hidden] {
+  display: none;
+}
+
 .site-header__action,
 .mobile-header__icon-link,
 .mobile-header__icon-button {
@@ -151,12 +170,21 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-1);
+  padding-inline: var(--space-2);
+  border-radius: var(--radius-lg);
   border: 0;
   background: transparent;
   color: var(--color-text);
   font: inherit;
   text-decoration: none;
   cursor: pointer;
+}
+
+.site-header__action:hover,
+.mobile-header__icon-link:hover,
+.mobile-header__icon-button:hover {
+  background: color-mix(in srgb, var(--color-secondary) 9%, transparent);
+  color: var(--color-secondary);
 }
 
 .site-header__cart,
@@ -179,7 +207,7 @@
 }
 
 .site-header__nav {
-  border-block-start: 1px solid var(--color-border);
+  border-block-start: 1px solid color-mix(in srgb, var(--color-border) 58%, transparent);
 }
 
 .site-header__menu {
@@ -201,12 +229,30 @@
   align-items: center;
   color: var(--color-text);
   font-weight: 700;
+  position: relative;
   text-decoration: none;
+}
+
+.site-header__menu-link::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 8px;
+  height: 2px;
+  content: "";
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
 }
 
 .site-header__menu-link:hover,
 .site-header__menu-link:focus-visible {
   color: var(--color-secondary);
+}
+
+.site-header__menu-link:hover::after,
+.site-header__menu-link:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .mega-menu {
@@ -237,9 +283,9 @@
   gap: var(--space-4);
   padding-block: var(--space-4);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   background: var(--color-surface);
-  box-shadow: 0 var(--space-2) var(--space-5) color-mix(in srgb, var(--color-primary) 15%, transparent);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--color-primary) 18%, transparent);
 }
 
 .mega-menu__heading {
@@ -308,7 +354,9 @@
   flex-direction: column;
   overflow-y: auto;
   border-inline-end: 1px solid var(--color-border);
-  background: var(--color-surface);
+  background:
+    linear-gradient(180deg, var(--color-surface), color-mix(in srgb, var(--color-bg) 60%, var(--color-surface))),
+    var(--color-surface);
   transform: translateX(-100%);
   transition: transform 180ms ease;
 }

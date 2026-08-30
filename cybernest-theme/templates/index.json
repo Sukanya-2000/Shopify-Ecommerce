@@ -24,12 +24,20 @@
       "settings": {
         "desktop_image": "",
         "mobile_image": "",
-        "heading": "CyberNest",
-        "description": "<p>Smart tech essentials for work, play, and everything between.</p>",
+        "eyebrow": "Modern tech marketplace",
+        "heading": "Upgrade your setup with smarter everyday tech.",
+        "description": "<p>Discover curated devices, accessories, and workspace essentials designed to make work, play, and everything between feel effortless.</p>",
         "primary_cta_text": "Shop deals",
         "primary_cta_link": "",
         "secondary_cta_text": "Explore departments",
-        "secondary_cta_link": ""
+        "secondary_cta_link": "",
+        "proof_one": "Fast delivery",
+        "proof_two": "Curated gear",
+        "proof_three": "Secure checkout",
+        "featured_product": "Studio-grade headphones",
+        "featured_offer": "Save up to 30% today",
+        "floating_stat": "Fresh arrivals weekly",
+        "shipping_stat": "2-4 day delivery"
       }
     },
     "department_grid": {

@@ -1,11 +1,11 @@
-<section class="page-section">
+<section class="page-section" data-local-brands>
   <div class="container">
     {%- if section.settings.heading != blank -%}
       <div class="section-heading">
         <h2>{{ section.settings.heading }}</h2>
       </div>
     {%- endif -%}
-    <div class="brand-logos" aria-label="Featured brands">
+    <div class="brand-logos" aria-label="Featured brands" data-local-brands-grid>
       {%- for block in section.blocks -%}
         <a class="brand-logo" href="{{ block.settings.link | default: routes.root_url }}" {{ block.shopify_attributes }}>
           <span class="brand-logo__image">
@@ -19,8 +19,11 @@
                   sizes: '160px',
                   alt: 'Brand logo'
               }}
+            {%- else -%}
+              <span class="brand-logo__fallback">CN</span>
             {%- endif -%}
           </span>
+          <span class="brand-logo__name">CyberNest</span>
         </a>
       {%- endfor -%}
     </div>

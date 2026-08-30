@@ -1,6 +1,14 @@
 <article class="product-card">
   <a class="product-card__link stack" href="{{ product.url }}">
     <div class="product-card__media">
+      <div class="product-card__badges">
+        {%- if product.compare_at_price > product.price -%}
+          <span class="badge badge--sale">Sale</span>
+        {%- endif -%}
+        {%- unless product.available -%}
+          <span class="badge">Sold out</span>
+        {%- endunless -%}
+      </div>
       {%- if product.featured_image -%}
         {{
           product.featured_image
@@ -11,6 +19,10 @@
             sizes: '(min-width: 48em) 25vw, 50vw',
             alt: product.featured_image.alt
         }}
+      {%- else -%}
+        <div class="product-card__placeholder" aria-hidden="true">
+          <span>{{ product.title | slice: 0, 1 }}</span>
+        </div>
       {%- endif -%}
     </div>
     <div class="stack">
@@ -18,15 +30,28 @@
         <p class="product-card__vendor">{{ product.vendor }}</p>
       {%- endif -%}
       <h3 class="product-card__title">{{ product.title }}</h3>
+      {%- if show_description and product.description != blank -%}
+        <p class="product-card__description">{{ product.description | strip_html | truncate: 112 }}</p>
+      {%- endif -%}
       <p class="product-card__price">{{ product.price | money }}</p>
+      {%- assign first_variant = product.selected_or_first_available_variant -%}
+      {%- if first_variant.inventory_management != blank and first_variant.inventory_quantity > 0 and first_variant.inventory_quantity < 5 -%}
+        <p class="product-card__stock">{{ first_variant.inventory_quantity }} pcs left</p>
+      {%- endif -%}
     </div>
   </a>
   <div class="product-card__actions">
     {% if product.has_only_default_variant %}
       {% form 'product', product, class: 'product-card__form' %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-        <button class="btn btn--sm product-card__button" type="submit" {% unless product.available %}disabled{% endunless %}>
-          {% if product.available %}Add{% else %}Sold out{% endif %}
+        <button
+          class="btn btn--sm product-card__button"
+          type="submit"
+          data-backend-add-cart
+          data-product-handle="{{ product.handle }}"
+          {% unless product.available %}disabled{% endunless %}
+        >
+          {% if product.available %}Add to cart{% else %}Sold out{% endif %}
         </button>
       {% endform %}
     {% else %}
@@ -41,7 +66,7 @@
       aria-label="Add {{ product.title | escape }} to wishlist"
       aria-pressed="false"
     >
-      <span aria-hidden="true">Save</span>
+      <span class="visually-hidden">Wishlist</span>
     </button>
   </div>
 </article>
