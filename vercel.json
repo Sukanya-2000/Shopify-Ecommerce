@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "backend/public/admin/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/admin/(.*)",
+      "dest": "backend/public/admin/$1"
+    },
+    {
+      "src": "/admin",
+      "dest": "backend/public/admin/index.html"
+    },
+    {
+      "src": "/admin/",
+      "dest": "backend/public/admin/index.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/api/index.js"
+    },
+    {
+      "src": "/",
+      "dest": "backend/public/admin/index.html"
+    }
+  ]
+}
