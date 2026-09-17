@@ -1,0 +1,31 @@
+<main class="page-section wishlist-page" data-wishlist-page>
+  <div class="container stack">
+    <h1>Wishlist</h1>
+    <div class="wishlist-page__grid" data-wishlist-items></div>
+    <div class="wishlist-page__empty" data-wishlist-empty hidden>
+      <p>Your wishlist is empty.</p>
+      <a class="btn" href="{{ routes.all_products_collection_url }}">Continue Shopping</a>
+    </div>
+  </div>
+
+  {% comment %}
+    Guest wishlist MVP: Liquid cannot read localStorage, so the browser uses this product id/handle map
+    to resolve saved ids into /products/{handle}.js requests. Logged-in cross-device customer metafield
+    sync is deferred to Phase 2.
+  {% endcomment %}
+  <script type="application/json" data-wishlist-product-map>
+    [
+      {%- paginate collections.all.products by 250 -%}
+        {%- for product in collections.all.products -%}
+          {"id": {{ product.id | json }}, "handle": {{ product.handle | json }}}{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      {%- endpaginate -%}
+    ]
+  </script>
+</main>
+
+{% schema %}
+{
+  "name": "Wishlist page"
+}
+{% endschema %}

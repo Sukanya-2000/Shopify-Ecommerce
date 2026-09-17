@@ -1,0 +1,19 @@
+{% comment %} Native Shopify recommendations section pattern using recommendations.performed. {% endcomment %}
+{% if recommendations.performed and recommendations.products_count > 0 %}
+  <section class="page-section product-recommendations">
+    <div class="container stack">
+      <h2>Related Products</h2>
+      <div class="product-grid">
+        {% for recommendation in recommendations.products limit: 4 %}
+          {% render 'product-card', product: recommendation %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product recommendations"
+}
+{% endschema %}

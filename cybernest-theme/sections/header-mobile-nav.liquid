@@ -1,0 +1,94 @@
+<header class="mobile-header" data-mobile-header>
+  <div class="mobile-header__bar">
+    <button class="mobile-header__icon-button" type="button" data-mobile-menu-open aria-expanded="false" aria-controls="MobileNavDrawer">
+      <span class="visually-hidden">Open menu</span>
+      <span aria-hidden="true">Menu</span>
+    </button>
+
+    <a class="mobile-header__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
+      {% if settings.logo != blank %}
+        {{ settings.logo | image_url: width: 180 | image_tag: loading: 'eager', alt: shop.name }}
+      {% else %}
+        <span>{{ shop.name }}</span>
+      {% endif %}
+    </a>
+
+    <div class="mobile-header__actions">
+      <a class="mobile-header__icon-link" href="{{ routes.search_url }}" aria-label="Search">Search</a>
+      <a class="mobile-header__icon-link mobile-header__cart" href="{{ routes.cart_url }}" aria-label="Cart">
+        Cart
+        <span class="site-header__cart-count" data-cart-count>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-nav" data-mobile-nav aria-hidden="true">
+    <button class="mobile-nav__overlay" type="button" data-mobile-menu-close aria-label="Close menu"></button>
+
+    <div class="mobile-nav__drawer" id="MobileNavDrawer">
+      <div class="mobile-nav__header">
+        <span>{{ shop.name }}</span>
+        <button class="mobile-header__icon-button" type="button" data-mobile-menu-close>
+          <span class="visually-hidden">Close menu</span>
+          <span aria-hidden="true">Close</span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav__menu" aria-label="Main">
+        {% for link in section.settings.main_menu.links %}
+          {% if link.links != blank %}
+            <details class="mobile-nav__details">
+              <summary>{{ link.title }}</summary>
+              <div class="mobile-nav__submenu">
+                {% for child_link in link.links %}
+                  {% if child_link.links != blank %}
+                    <details class="mobile-nav__details mobile-nav__details--child">
+                      <summary>{{ child_link.title }}</summary>
+                      <div class="mobile-nav__submenu">
+                        {% for grandchild_link in child_link.links %}
+                          <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                        {% endfor %}
+                      </div>
+                    </details>
+                  {% else %}
+                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </details>
+          {% else %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endif %}
+        {% else %}
+          <a href="{{ routes.all_products_collection_url }}">Products</a>
+        {% endfor %}
+      </nav>
+
+      <div class="mobile-nav__footer">
+        <a href="{{ routes.account_url }}">Account</a>
+        <a href="{{ routes.account_url }}">Orders</a>
+        <a href="/pages/wishlist">Wishlist</a>
+        <a href="/pages/contact">Customer Support</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Mobile header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "Main menu",
+      "default": "main-menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile header"
+    }
+  ]
+}
+{% endschema %}

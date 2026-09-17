@@ -1,0 +1,3267 @@
+{
+  "products": [
+    {
+      "_id": "dev_00001",
+      "handle": "nest-hub-mini",
+      "title": "Nest Hub Mini",
+      "descriptionHtml": "<p>Compact smart display for counters, desks, and bedside routines.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Smart Home",
+      "tags": [
+        "smart home",
+        "display",
+        "best seller"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Charcoal"
+      },
+      "sku": "CN-SH-001",
+      "grams": 720,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 48,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 79,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Nest Hub Mini"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.898Z",
+      "updatedAt": "2026-08-19T14:29:58.898Z"
+    },
+    {
+      "_id": "dev_00002",
+      "handle": "orbit-wifi-6-router",
+      "title": "Orbit WiFi 6 Router",
+      "descriptionHtml": "<p>Fast dual-band router built for streaming, gaming, and connected homes.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Networking",
+      "type": "Networking",
+      "tags": [
+        "networking",
+        "wifi",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-NW-002",
+      "grams": 910,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 35,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 129,
+      "compareAtPrice": 159,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Orbit WiFi 6 Router"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00003",
+      "handle": "beacon-mesh-node",
+      "title": "Beacon Mesh Node",
+      "descriptionHtml": "<p>Add-on mesh node that extends coverage into bedrooms, garages, and patios.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Networking",
+      "type": "Networking",
+      "tags": [
+        "networking",
+        "mesh",
+        "smart home"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-NW-003",
+      "grams": 540,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 42,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 89,
+      "compareAtPrice": 119,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Beacon Mesh Node"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00004",
+      "handle": "pulse-smart-speaker",
+      "title": "Pulse Smart Speaker",
+      "descriptionHtml": "<p>Room-filling voice speaker with clean audio and everyday assistant controls.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "audio",
+        "smart home",
+        "best seller"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Graphite"
+      },
+      "sku": "CN-AU-004",
+      "grams": 830,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 56,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 69,
+      "compareAtPrice": 89,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Pulse Smart Speaker"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00005",
+      "handle": "glow-rgb-light-strip",
+      "title": "Glow RGB Light Strip",
+      "descriptionHtml": "<p>Flexible app-controlled light strip for desks, shelves, and media walls.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Lighting",
+      "tags": [
+        "lighting",
+        "rgb",
+        "gaming"
+      ],
+      "published": true,
+      "option": {
+        "name": "Length",
+        "value": "16 ft"
+      },
+      "sku": "CN-LT-005",
+      "grams": 310,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 80,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 34,
+      "compareAtPrice": 45,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Glow RGB Light Strip"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00006",
+      "handle": "halo-smart-bulb-pack",
+      "title": "Halo Smart Bulb 4-Pack",
+      "descriptionHtml": "<p>Dimmable color smart bulbs with scene presets and voice assistant support.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Lighting",
+      "tags": [
+        "lighting",
+        "smart home",
+        "value pack"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "4 Pack"
+      },
+      "sku": "CN-LT-006",
+      "grams": 600,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 64,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 49,
+      "compareAtPrice": 69,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Halo Smart Bulb 4-Pack"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00007",
+      "handle": "sentinel-doorbell-camera",
+      "title": "Sentinel Doorbell Camera",
+      "descriptionHtml": "<p>Video doorbell with motion alerts, night vision, and two-way audio.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Video",
+      "type": "Security",
+      "tags": [
+        "security",
+        "camera",
+        "smart home"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-SC-007",
+      "grams": 450,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 28,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 119,
+      "compareAtPrice": 149,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Sentinel Doorbell Camera"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00008",
+      "handle": "watchtower-indoor-cam",
+      "title": "Watchtower Indoor Cam",
+      "descriptionHtml": "<p>Compact 1080p indoor camera for pets, deliveries, and peace of mind.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Video",
+      "type": "Security",
+      "tags": [
+        "security",
+        "camera",
+        "indoor"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-SC-008",
+      "grams": 290,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 52,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 39,
+      "compareAtPrice": 59,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Watchtower Indoor Cam"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00009",
+      "handle": "anchor-smart-plug-duo",
+      "title": "Anchor Smart Plug Duo",
+      "descriptionHtml": "<p>Two compact smart plugs for lamps, appliances, and scheduled routines.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Smart Home",
+      "tags": [
+        "smart home",
+        "plug",
+        "value pack"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "2 Pack"
+      },
+      "sku": "CN-SH-009",
+      "grams": 240,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 90,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 24,
+      "compareAtPrice": 32,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Anchor Smart Plug Duo"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00010",
+      "handle": "climate-sensor-pro",
+      "title": "Climate Sensor Pro",
+      "descriptionHtml": "<p>Track temperature, humidity, and air comfort from anywhere.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Smart Home",
+      "tags": [
+        "sensor",
+        "smart home",
+        "climate"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-SH-010",
+      "grams": 120,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 44,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 29,
+      "compareAtPrice": 39,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Climate Sensor Pro"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00011",
+      "handle": "stride-fitness-band",
+      "title": "Stride Fitness Band",
+      "descriptionHtml": "<p>Lightweight activity tracker with sleep insights and long battery life.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Wearable Technology",
+      "type": "Wearables",
+      "tags": [
+        "wearables",
+        "fitness",
+        "new arrival"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-WR-011",
+      "grams": 90,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 72,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 59,
+      "compareAtPrice": 79,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Stride Fitness Band"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00012",
+      "handle": "aurora-smartwatch",
+      "title": "Aurora Smartwatch",
+      "descriptionHtml": "<p>Everyday smartwatch with health tracking, notifications, and quick charging.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Wearable Technology",
+      "type": "Wearables",
+      "tags": [
+        "wearables",
+        "smartwatch",
+        "best seller"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Midnight"
+      },
+      "sku": "CN-WR-012",
+      "grams": 180,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 38,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 149,
+      "compareAtPrice": 189,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Aurora Smartwatch"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00013",
+      "handle": "sonicbuds-air",
+      "title": "SonicBuds Air",
+      "descriptionHtml": "<p>True wireless earbuds with clear calls, touch controls, and pocketable case.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "audio",
+        "earbuds",
+        "deals"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-AU-013",
+      "grams": 110,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 85,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 49,
+      "compareAtPrice": 69,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "SonicBuds Air"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00014",
+      "handle": "sonicbuds-pro",
+      "title": "SonicBuds Pro",
+      "descriptionHtml": "<p>Noise-reducing wireless earbuds tuned for travel, calls, and playlists.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "audio",
+        "earbuds",
+        "premium"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-AU-014",
+      "grams": 130,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 46,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 99,
+      "compareAtPrice": 129,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "SonicBuds Pro"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00015",
+      "handle": "studio-over-ear-headphones",
+      "title": "Studio Over-Ear Headphones",
+      "descriptionHtml": "<p>Comfortable over-ear headphones with deep bass and fold-flat design.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "audio",
+        "headphones",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Graphite"
+      },
+      "sku": "CN-AU-015",
+      "grams": 420,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 33,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 89,
+      "compareAtPrice": 119,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Studio Over-Ear Headphones"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00016",
+      "handle": "voicecast-usb-mic",
+      "title": "VoiceCast USB Mic",
+      "descriptionHtml": "<p>Plug-and-play microphone for meetings, streaming, and podcast recordings.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Creator Gear",
+      "tags": [
+        "creator",
+        "audio",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-CR-016",
+      "grams": 510,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 41,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 69,
+      "compareAtPrice": 89,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+        "alt": "VoiceCast USB Mic"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00017",
+      "handle": "streamlight-webcam",
+      "title": "StreamLight Webcam",
+      "descriptionHtml": "<p>1080p webcam with autofocus and built-in privacy cover.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Video",
+      "type": "Creator Gear",
+      "tags": [
+        "creator",
+        "webcam",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-CR-017",
+      "grams": 220,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 58,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 54,
+      "compareAtPrice": 74,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+        "alt": "StreamLight Webcam"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00018",
+      "handle": "creator-ring-light",
+      "title": "Creator Ring Light",
+      "descriptionHtml": "<p>Adjustable LED ring light with desktop tripod and phone mount.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Camera & Optic Accessories",
+      "type": "Creator Gear",
+      "tags": [
+        "creator",
+        "lighting",
+        "video"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "10 in"
+      },
+      "sku": "CN-CR-018",
+      "grams": 760,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 39,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 42,
+      "compareAtPrice": 56,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Creator Ring Light"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00019",
+      "handle": "pixel-4k-action-cam",
+      "title": "Pixel 4K Action Cam",
+      "descriptionHtml": "<p>Water-resistant action camera with 4K recording and stabilization modes.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Cameras",
+      "type": "Camera",
+      "tags": [
+        "camera",
+        "travel",
+        "creator"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-CM-019",
+      "grams": 360,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 22,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 159,
+      "compareAtPrice": 199,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Pixel 4K Action Cam"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00020",
+      "handle": "frame-digital-photo-display",
+      "title": "Frame Digital Photo Display",
+      "descriptionHtml": "<p>WiFi photo frame for sharing albums with family and friends.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Home Tech",
+      "tags": [
+        "display",
+        "gift",
+        "smart home"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "10 in"
+      },
+      "sku": "CN-HT-020",
+      "grams": 680,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 31,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 109,
+      "compareAtPrice": 139,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Frame Digital Photo Display"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00021",
+      "handle": "arc-65w-usb-c-charger",
+      "title": "Arc 65W USB-C Charger",
+      "descriptionHtml": "<p>Compact wall charger for laptops, tablets, and phones.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Chargers",
+      "tags": [
+        "charger",
+        "usb-c",
+        "travel"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-CH-021",
+      "grams": 150,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 100,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 32,
+      "compareAtPrice": 42,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Arc 65W USB-C Charger"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00022",
+      "handle": "arc-100w-gan-charger",
+      "title": "Arc 100W GaN Charger",
+      "descriptionHtml": "<p>High-output charger with multiple ports for full desk power.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Chargers",
+      "tags": [
+        "charger",
+        "usb-c",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-CH-022",
+      "grams": 230,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 62,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 59,
+      "compareAtPrice": 79,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Arc 100W GaN Charger"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00023",
+      "handle": "magdock-wireless-charger",
+      "title": "MagDock Wireless Charger",
+      "descriptionHtml": "<p>Magnetic wireless charging stand for phones and earbuds.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Chargers",
+      "tags": [
+        "charger",
+        "wireless",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Silver"
+      },
+      "sku": "CN-CH-023",
+      "grams": 420,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 50,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 44,
+      "compareAtPrice": 59,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "MagDock Wireless Charger"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00024",
+      "handle": "trio-charging-station",
+      "title": "Trio Charging Station",
+      "descriptionHtml": "<p>Three-device charging station for phone, watch, and earbuds.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Chargers",
+      "tags": [
+        "charger",
+        "wireless",
+        "best seller"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-CH-024",
+      "grams": 560,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 36,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 79,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Trio Charging Station"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00025",
+      "handle": "volt-20000-power-bank",
+      "title": "Volt 20000 Power Bank",
+      "descriptionHtml": "<p>High-capacity portable battery with USB-C fast charging.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Power",
+      "tags": [
+        "power bank",
+        "travel",
+        "usb-c"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-PW-025",
+      "grams": 430,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 74,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 49,
+      "compareAtPrice": 64,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Volt 20000 Power Bank"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00026",
+      "handle": "volt-slim-power-bank",
+      "title": "Volt Slim Power Bank",
+      "descriptionHtml": "<p>Pocket-friendly portable charger for daily backup power.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Power",
+      "tags": [
+        "power bank",
+        "travel",
+        "deals"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Blue"
+      },
+      "sku": "CN-PW-026",
+      "grams": 220,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 88,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 29,
+      "compareAtPrice": 39,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Volt Slim Power Bank"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00027",
+      "handle": "braid-usb-c-cable-3ft",
+      "title": "Braid USB-C Cable 3 ft",
+      "descriptionHtml": "<p>Durable braided USB-C cable for charging and data transfer.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Cables",
+      "tags": [
+        "cable",
+        "usb-c",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Length",
+        "value": "3 ft"
+      },
+      "sku": "CN-CB-027",
+      "grams": 70,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 140,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 12,
+      "compareAtPrice": 16,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Braid USB-C Cable 3 ft"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00028",
+      "handle": "braid-usb-c-cable-6ft",
+      "title": "Braid USB-C Cable 6 ft",
+      "descriptionHtml": "<p>Extra-reach braided USB-C cable for desks, couches, and nightstands.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Cables",
+      "tags": [
+        "cable",
+        "usb-c",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Length",
+        "value": "6 ft"
+      },
+      "sku": "CN-CB-028",
+      "grams": 100,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 120,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 16,
+      "compareAtPrice": 21,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Braid USB-C Cable 6 ft"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00029",
+      "handle": "swift-hdmi-21-cable",
+      "title": "Swift HDMI 2.1 Cable",
+      "descriptionHtml": "<p>High-speed HDMI cable for consoles, monitors, and 4K entertainment.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Cables",
+      "tags": [
+        "cable",
+        "hdmi",
+        "gaming"
+      ],
+      "published": true,
+      "option": {
+        "name": "Length",
+        "value": "6 ft"
+      },
+      "sku": "CN-CB-029",
+      "grams": 160,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 95,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 19,
+      "compareAtPrice": 25,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Swift HDMI 2.1 Cable"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00030",
+      "handle": "link-7-in-1-usb-c-hub",
+      "title": "Link 7-in-1 USB-C Hub",
+      "descriptionHtml": "<p>Portable hub with HDMI, USB, SD, and pass-through charging.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Docks & Hubs",
+      "tags": [
+        "usb-c",
+        "hub",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Space Gray"
+      },
+      "sku": "CN-DK-030",
+      "grams": 180,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 66,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 45,
+      "compareAtPrice": 60,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Link 7-in-1 USB-C Hub"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00031",
+      "handle": "link-12-in-1-dock",
+      "title": "Link 12-in-1 Dock",
+      "descriptionHtml": "<p>Desktop docking station for monitors, peripherals, and wired networking.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Docks & Hubs",
+      "tags": [
+        "dock",
+        "usb-c",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Space Gray"
+      },
+      "sku": "CN-DK-031",
+      "grams": 620,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 29,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 119,
+      "compareAtPrice": 149,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Link 12-in-1 Dock"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00032",
+      "handle": "elevate-laptop-stand",
+      "title": "Elevate Laptop Stand",
+      "descriptionHtml": "<p>Aluminum laptop stand that improves posture and desk airflow.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "desk gear",
+        "laptop",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Silver"
+      },
+      "sku": "CN-DG-032",
+      "grams": 780,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 57,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 39,
+      "compareAtPrice": 52,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Elevate Laptop Stand"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00033",
+      "handle": "foldaway-tablet-stand",
+      "title": "FoldAway Tablet Stand",
+      "descriptionHtml": "<p>Adjustable folding stand for tablets, phones, and portable screens.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "desk gear",
+        "tablet",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-DG-033",
+      "grams": 210,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 70,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 18,
+      "compareAtPrice": 24,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+        "alt": "FoldAway Tablet Stand"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00034",
+      "handle": "focus-mechanical-keyboard",
+      "title": "Focus Mechanical Keyboard",
+      "descriptionHtml": "<p>Compact mechanical keyboard with tactile switches and white backlight.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Keyboards",
+      "tags": [
+        "keyboard",
+        "desk gear",
+        "gaming"
+      ],
+      "published": true,
+      "option": {
+        "name": "Switch",
+        "value": "Tactile"
+      },
+      "sku": "CN-KB-034",
+      "grams": 720,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 34,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 84,
+      "compareAtPrice": 109,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Focus Mechanical Keyboard"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00035",
+      "handle": "focus-low-profile-keyboard",
+      "title": "Focus Low Profile Keyboard",
+      "descriptionHtml": "<p>Slim wireless keyboard built for quiet typing and multi-device work.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Keyboards",
+      "tags": [
+        "keyboard",
+        "wireless",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Graphite"
+      },
+      "sku": "CN-KB-035",
+      "grams": 520,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 49,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 69,
+      "compareAtPrice": 89,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Focus Low Profile Keyboard"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00036",
+      "handle": "glide-wireless-mouse",
+      "title": "Glide Wireless Mouse",
+      "descriptionHtml": "<p>Ergonomic wireless mouse with silent clicks and precision tracking.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Mice",
+      "tags": [
+        "mouse",
+        "wireless",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-MS-036",
+      "grams": 140,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 86,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 29,
+      "compareAtPrice": 39,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Glide Wireless Mouse"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00037",
+      "handle": "glide-pro-mouse",
+      "title": "Glide Pro Mouse",
+      "descriptionHtml": "<p>Rechargeable productivity mouse with side buttons and fast scrolling.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Mice",
+      "tags": [
+        "mouse",
+        "wireless",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Graphite"
+      },
+      "sku": "CN-MS-037",
+      "grams": 180,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 51,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 54,
+      "compareAtPrice": 72,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Glide Pro Mouse"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00038",
+      "handle": "control-xl-desk-mat",
+      "title": "Control XL Desk Mat",
+      "descriptionHtml": "<p>Large water-resistant desk mat for keyboard, mouse, and accessories.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "desk mat",
+        "desk gear",
+        "gaming"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Charcoal"
+      },
+      "sku": "CN-DG-038",
+      "grams": 390,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 78,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 24,
+      "compareAtPrice": 32,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Control XL Desk Mat"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00039",
+      "handle": "tidy-cable-kit",
+      "title": "Tidy Cable Kit",
+      "descriptionHtml": "<p>Cable clips, ties, and sleeves for cleaner desk and media setups.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "cable management",
+        "desk gear",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-DG-039",
+      "grams": 180,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 110,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 17,
+      "compareAtPrice": 23,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Tidy Cable Kit"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00040",
+      "handle": "rise-monitor-arm",
+      "title": "Rise Monitor Arm",
+      "descriptionHtml": "<p>Adjustable single monitor arm with clamp mount and cable routing.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "monitor",
+        "desk gear",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-DG-040",
+      "grams": 2600,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 24,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 79,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Rise Monitor Arm"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00041",
+      "handle": "clarity-24-monitor",
+      "title": "Clarity 24 Monitor",
+      "descriptionHtml": "<p>Full HD monitor with slim bezels for everyday work and study.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Computers",
+      "type": "Monitors",
+      "tags": [
+        "monitor",
+        "home office",
+        "display"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "24 in"
+      },
+      "sku": "CN-MN-041",
+      "grams": 3900,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 18,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 139,
+      "compareAtPrice": 179,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Clarity 24 Monitor"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00042",
+      "handle": "clarity-27-qhd-monitor",
+      "title": "Clarity 27 QHD Monitor",
+      "descriptionHtml": "<p>QHD monitor with crisp detail for multitasking and creative work.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Computers",
+      "type": "Monitors",
+      "tags": [
+        "monitor",
+        "creator",
+        "display"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "27 in"
+      },
+      "sku": "CN-MN-042",
+      "grams": 5200,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 16,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 229,
+      "compareAtPrice": 279,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Clarity 27 QHD Monitor"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00043",
+      "handle": "nova-gaming-headset",
+      "title": "Nova Gaming Headset",
+      "descriptionHtml": "<p>Comfortable gaming headset with boom mic and spatial audio support.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Gaming",
+      "tags": [
+        "gaming",
+        "headset",
+        "audio"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-GM-043",
+      "grams": 360,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 45,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 64,
+      "compareAtPrice": 84,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Nova Gaming Headset"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00044",
+      "handle": "nova-rgb-keyboard",
+      "title": "Nova RGB Keyboard",
+      "descriptionHtml": "<p>Full-size RGB keyboard with responsive switches and media controls.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Gaming",
+      "tags": [
+        "gaming",
+        "keyboard",
+        "rgb"
+      ],
+      "published": true,
+      "option": {
+        "name": "Switch",
+        "value": "Linear"
+      },
+      "sku": "CN-GM-044",
+      "grams": 860,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 32,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 74,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Nova RGB Keyboard"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00045",
+      "handle": "strike-gaming-mouse",
+      "title": "Strike Gaming Mouse",
+      "descriptionHtml": "<p>Lightweight wired gaming mouse with adjustable DPI and grip texture.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Gaming",
+      "tags": [
+        "gaming",
+        "mouse",
+        "deals"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-GM-045",
+      "grams": 120,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 68,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 34,
+      "compareAtPrice": 46,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Strike Gaming Mouse"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00046",
+      "handle": "coolpad-laptop-cooling-stand",
+      "title": "CoolPad Laptop Cooling Stand",
+      "descriptionHtml": "<p>Angled laptop cooling pad with quiet fans and USB passthrough.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Networking",
+      "type": "Computer Accessories",
+      "tags": [
+        "laptop",
+        "cooling",
+        "gaming"
+      ],
+      "published": true,
+      "option": {
+        "name": "Title",
+        "value": "Default Title"
+      },
+      "sku": "CN-CA-046",
+      "grams": 0,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 37,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 36,
+      "compareAtPrice": 49,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+        "alt": "CoolPad Laptop Cooling Stand"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-29T16:51:22.812Z"
+    },
+    {
+      "_id": "dev_00047",
+      "handle": "shield-laptop-sleeve-13",
+      "title": "Shield Laptop Sleeve 13 in",
+      "descriptionHtml": "<p>Padded laptop sleeve with soft lining and water-resistant shell.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Bags & Cases",
+      "tags": [
+        "laptop",
+        "case",
+        "travel"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "13 in"
+      },
+      "sku": "CN-BC-047",
+      "grams": 240,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 73,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 22,
+      "compareAtPrice": 30,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Shield Laptop Sleeve 13 in"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00048",
+      "handle": "shield-laptop-sleeve-15",
+      "title": "Shield Laptop Sleeve 15 in",
+      "descriptionHtml": "<p>Protective laptop sleeve sized for larger notebooks and daily commutes.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Bags & Cases",
+      "tags": [
+        "laptop",
+        "case",
+        "travel"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "15 in"
+      },
+      "sku": "CN-BC-048",
+      "grams": 290,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 61,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 26,
+      "compareAtPrice": 35,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Shield Laptop Sleeve 15 in"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00049",
+      "handle": "roam-tech-organizer",
+      "title": "Roam Tech Organizer",
+      "descriptionHtml": "<p>Compact pouch for chargers, cables, earbuds, and travel essentials.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Bags & Cases",
+      "tags": [
+        "travel",
+        "organizer",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Gray"
+      },
+      "sku": "CN-BC-049",
+      "grams": 210,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 84,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 24,
+      "compareAtPrice": 32,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Roam Tech Organizer"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00050",
+      "handle": "roam-power-backpack",
+      "title": "Roam Power Backpack",
+      "descriptionHtml": "<p>Commuter backpack with padded laptop pocket and cable pass-through.</p>",
+      "vendor": "CyberNest",
+      "category": "Luggage & Bags > Backpacks",
+      "type": "Bags & Cases",
+      "tags": [
+        "backpack",
+        "travel",
+        "laptop"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-BC-050",
+      "grams": 890,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 27,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 69,
+      "compareAtPrice": 89,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Roam Power Backpack"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00051",
+      "handle": "snap-phone-grip-stand",
+      "title": "Snap Phone Grip Stand",
+      "descriptionHtml": "<p>Magnetic phone grip that folds into a stable video stand.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Phone Accessories",
+      "tags": [
+        "phone",
+        "stand",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-PA-051",
+      "grams": 60,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 130,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 14,
+      "compareAtPrice": 19,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Snap Phone Grip Stand"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00052",
+      "handle": "clearcase-phone-cover",
+      "title": "ClearCase Phone Cover",
+      "descriptionHtml": "<p>Slim transparent phone case with raised edges and flexible sides.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Phone Accessories",
+      "tags": [
+        "phone",
+        "case",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "Universal"
+      },
+      "sku": "CN-PA-052",
+      "grams": 80,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 115,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 18,
+      "compareAtPrice": 24,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+        "alt": "ClearCase Phone Cover"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00053",
+      "handle": "glassguard-screen-protector",
+      "title": "GlassGuard Screen Protector",
+      "descriptionHtml": "<p>Tempered glass screen protector with install frame and cleaning kit.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Phone Accessories",
+      "tags": [
+        "phone",
+        "screen protector",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "2 Pack"
+      },
+      "sku": "CN-PA-053",
+      "grams": 70,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 150,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 13,
+      "compareAtPrice": 18,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+        "alt": "GlassGuard Screen Protector"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00054",
+      "handle": "drive-usb-c-car-charger",
+      "title": "Drive USB-C Car Charger",
+      "descriptionHtml": "<p>Fast dual-port car charger for phones, tablets, and navigation gear.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Chargers",
+      "tags": [
+        "car",
+        "charger",
+        "travel"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-CH-054",
+      "grams": 90,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 93,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 19,
+      "compareAtPrice": 26,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Drive USB-C Car Charger"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00055",
+      "handle": "dash-mini-car-mount",
+      "title": "Dash Mini Car Mount",
+      "descriptionHtml": "<p>Low-profile magnetic car mount for hands-free navigation.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Phone Accessories",
+      "tags": [
+        "car",
+        "phone",
+        "mount"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-PA-055",
+      "grams": 110,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 77,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 16,
+      "compareAtPrice": 22,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Dash Mini Car Mount"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00056",
+      "handle": "trail-bluetooth-tracker",
+      "title": "Trail Bluetooth Tracker",
+      "descriptionHtml": "<p>Bluetooth item tracker for keys, bags, luggage, and daily essentials.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Trackers",
+      "tags": [
+        "tracker",
+        "travel",
+        "smart home"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "1 Pack"
+      },
+      "sku": "CN-TR-056",
+      "grams": 30,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 105,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 24,
+      "compareAtPrice": 30,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Trail Bluetooth Tracker"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00057",
+      "handle": "trail-tracker-4-pack",
+      "title": "Trail Tracker 4-Pack",
+      "descriptionHtml": "<p>Four Bluetooth trackers for family bags, keys, and checked luggage.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Trackers",
+      "tags": [
+        "tracker",
+        "travel",
+        "value pack"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "4 Pack"
+      },
+      "sku": "CN-TR-057",
+      "grams": 120,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 48,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 79,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Trail Tracker 4-Pack"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00058",
+      "handle": "spark-kids-headphones",
+      "title": "Spark Kids Headphones",
+      "descriptionHtml": "<p>Volume-limited headphones with soft ear cushions and sturdy cable.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "kids",
+        "headphones",
+        "audio"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Blue"
+      },
+      "sku": "CN-AU-058",
+      "grams": 240,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 54,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 24,
+      "compareAtPrice": 34,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Spark Kids Headphones"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.901Z",
+      "updatedAt": "2026-08-19T14:29:58.901Z"
+    },
+    {
+      "_id": "dev_00059",
+      "handle": "learn-tablet-stylus",
+      "title": "Learn Tablet Stylus",
+      "descriptionHtml": "<p>Rechargeable stylus for note taking, sketching, and tablet learning.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Tablet Accessories",
+      "tags": [
+        "tablet",
+        "stylus",
+        "school"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-TA-059",
+      "grams": 50,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 82,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 29,
+      "compareAtPrice": 39,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Learn Tablet Stylus"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00060",
+      "handle": "clean-screen-care-kit",
+      "title": "Clean Screen Care Kit",
+      "descriptionHtml": "<p>Microfiber cloths and screen-safe spray for laptops, tablets, and phones.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Cleaning",
+      "tags": [
+        "cleaning",
+        "accessory",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "Kit"
+      },
+      "sku": "CN-CL-060",
+      "grams": 260,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 98,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 15,
+      "compareAtPrice": 20,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Clean Screen Care Kit"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00061",
+      "handle": "zen-robot-vacuum",
+      "title": "Zen Robot Vacuum",
+      "descriptionHtml": "<p>Low-profile robot vacuum with smart mapping, quiet cleaning modes, and app scheduling for daily floor care.</p>",
+      "vendor": "CyberNest",
+      "category": "Home & Garden > Household Appliances",
+      "type": "Smart Home",
+      "tags": [
+        "smart home",
+        "cleaning",
+        "home tech"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-SH-061",
+      "grams": 3200,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 21,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 219,
+      "compareAtPrice": 279,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Zen Robot Vacuum"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00062",
+      "handle": "pureair-smart-purifier",
+      "title": "PureAir Smart Purifier",
+      "descriptionHtml": "<p>Quiet air purifier with app controls, room quality alerts, and a replaceable HEPA-style filter.</p>",
+      "vendor": "CyberNest",
+      "category": "Home & Garden > Household Appliances",
+      "type": "Home Tech",
+      "tags": [
+        "air purifier",
+        "smart home",
+        "wellness"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-HT-062",
+      "grams": 4100,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 18,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 189,
+      "compareAtPrice": 239,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=1200&q=80",
+        "alt": "PureAir Smart Purifier"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00063",
+      "handle": "brewlink-smart-kettle",
+      "title": "BrewLink Smart Kettle",
+      "descriptionHtml": "<p>Precision electric kettle with temperature presets for coffee, tea, and quick kitchen routines.</p>",
+      "vendor": "CyberNest",
+      "category": "Home & Garden > Kitchen & Dining",
+      "type": "Kitchen Tech",
+      "tags": [
+        "kitchen",
+        "smart home",
+        "gift"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Matte Black"
+      },
+      "sku": "CN-KT-063",
+      "grams": 1200,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 34,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 74,
+      "compareAtPrice": 99,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=1200&q=80",
+        "alt": "BrewLink Smart Kettle"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00064",
+      "handle": "pixelpad-drawing-tablet",
+      "title": "PixelPad Drawing Tablet",
+      "descriptionHtml": "<p>Slim USB drawing tablet with pressure-sensitive pen for notes, sketches, and digital art.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Creator Gear",
+      "tags": [
+        "creator",
+        "tablet",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "Medium"
+      },
+      "sku": "CN-CR-064",
+      "grams": 680,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 26,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 89,
+      "compareAtPrice": 119,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
+        "alt": "PixelPad Drawing Tablet"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00065",
+      "handle": "focusbar-monitor-light",
+      "title": "FocusBar Monitor Light",
+      "descriptionHtml": "<p>USB-C monitor light bar with adjustable brightness that keeps your desk lit without screen glare.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Desk Gear",
+      "tags": [
+        "desk gear",
+        "lighting",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-DG-065",
+      "grams": 520,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 44,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 49,
+      "compareAtPrice": 69,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+        "alt": "FocusBar Monitor Light"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00066",
+      "handle": "viewmate-portable-monitor",
+      "title": "ViewMate Portable Monitor",
+      "descriptionHtml": "<p>Lightweight USB-C portable display for travel workstations, presentations, and dual-screen focus.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Computers",
+      "type": "Monitors",
+      "tags": [
+        "monitor",
+        "travel",
+        "home office"
+      ],
+      "published": true,
+      "option": {
+        "name": "Size",
+        "value": "15.6 in"
+      },
+      "sku": "CN-MN-066",
+      "grams": 980,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 19,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 179,
+      "compareAtPrice": 229,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=1200&q=80",
+        "alt": "ViewMate Portable Monitor"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00067",
+      "handle": "soundbase-desktop-speakers",
+      "title": "SoundBase Desktop Speakers",
+      "descriptionHtml": "<p>Compact stereo speakers with clear mids, easy volume control, and a clean desk-friendly footprint.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Audio",
+      "type": "Audio",
+      "tags": [
+        "audio",
+        "speakers",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Walnut"
+      },
+      "sku": "CN-AU-067",
+      "grams": 1600,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 25,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 79,
+      "compareAtPrice": 109,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+        "alt": "SoundBase Desktop Speakers"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00068",
+      "handle": "securepad-fingerprint-lock",
+      "title": "SecurePad Fingerprint Lock",
+      "descriptionHtml": "<p>Rechargeable fingerprint padlock for lockers, luggage, gym bags, and shared storage.</p>",
+      "vendor": "CyberNest",
+      "category": "Hardware > Locks & Keys",
+      "type": "Security",
+      "tags": [
+        "security",
+        "travel",
+        "smart lock"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-SC-068",
+      "grams": 210,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 52,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 39,
+      "compareAtPrice": 54,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80",
+        "alt": "SecurePad Fingerprint Lock"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00069",
+      "handle": "petwatch-smart-feeder",
+      "title": "PetWatch Smart Feeder",
+      "descriptionHtml": "<p>App-controlled pet feeder with scheduled portions, voice recording, and a clear food hopper.</p>",
+      "vendor": "CyberNest",
+      "category": "Animals & Pet Supplies > Pet Supplies",
+      "type": "Home Tech",
+      "tags": [
+        "pet tech",
+        "smart home",
+        "camera"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-HT-069",
+      "grams": 2600,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 17,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 129,
+      "compareAtPrice": 169,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1601758064224-c3c00fb7e2ee?auto=format&fit=crop&w=1200&q=80",
+        "alt": "PetWatch Smart Feeder"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00070",
+      "handle": "powercube-surge-station",
+      "title": "PowerCube Surge Station",
+      "descriptionHtml": "<p>Six-outlet surge station with USB-C charging, braided cord, and desk-mount ready design.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Power",
+      "tags": [
+        "power",
+        "charger",
+        "desk gear"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "White"
+      },
+      "sku": "CN-PW-070",
+      "grams": 760,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 61,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 42,
+      "compareAtPrice": 56,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=1200&q=80",
+        "alt": "PowerCube Surge Station"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00071",
+      "handle": "camshield-privacy-kit",
+      "title": "CamShield Privacy Kit",
+      "descriptionHtml": "<p>Privacy covers for laptops, tablets, and monitors, plus microfiber cloths for a cleaner setup.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Electronics Accessories",
+      "type": "Computer Accessories",
+      "tags": [
+        "privacy",
+        "laptop",
+        "accessory"
+      ],
+      "published": true,
+      "option": {
+        "name": "Pack",
+        "value": "6 Pack"
+      },
+      "sku": "CN-CA-071",
+      "grams": 80,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 118,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 11,
+      "compareAtPrice": 16,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+        "alt": "CamShield Privacy Kit"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "_id": "dev_00072",
+      "handle": "snapscan-portable-scanner",
+      "title": "SnapScan Portable Scanner",
+      "descriptionHtml": "<p>Compact document scanner for receipts, contracts, notes, and lightweight home office archiving.</p>",
+      "vendor": "CyberNest",
+      "category": "Electronics > Print, Copy, Scan & Fax",
+      "type": "Office Tech",
+      "tags": [
+        "scanner",
+        "home office",
+        "travel"
+      ],
+      "published": true,
+      "option": {
+        "name": "Color",
+        "value": "Black"
+      },
+      "sku": "CN-OF-072",
+      "grams": 520,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 23,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 99,
+      "compareAtPrice": 129,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1200&q=80",
+        "alt": "SnapScan Portable Scanner"
+      },
+      "giftCard": false,
+      "status": "active",
+      "createdAt": "2026-08-19T14:29:58.902Z",
+      "updatedAt": "2026-08-19T14:29:58.902Z"
+    },
+    {
+      "handle": "testing",
+      "title": "testing",
+      "descriptionHtml": "",
+      "vendor": "CyberNest",
+      "category": "",
+      "type": "",
+      "tags": [],
+      "published": true,
+      "option": {
+        "name": "Title",
+        "value": "Default Title"
+      },
+      "sku": "testing",
+      "grams": 0,
+      "inventory": {
+        "tracker": "shopify",
+        "quantity": 4,
+        "policy": "deny"
+      },
+      "fulfillmentService": "manual",
+      "price": 20,
+      "compareAtPrice": null,
+      "requiresShipping": true,
+      "taxable": true,
+      "image": {
+        "src": "",
+        "alt": "testing"
+      },
+      "giftCard": false,
+      "status": "active",
+      "_id": "e07fdfe3c96b4d0dfc7a9778",
+      "createdAt": "2026-08-29T14:06:52.913Z",
+      "updatedAt": "2026-08-29T14:28:03.110Z"
+    }
+  ],
+  "users": [
+    {
+      "name": "CyberNest Admin",
+      "email": "admin@cybernest.local",
+      "passwordHash": "$2a$10$9T1iKUbhsOvRTO9YZk2BzOfv7sh46.Gyq3H8Z.c6bR7EmXw2n1XfK",
+      "role": "admin",
+      "_id": "dev_00073",
+      "createdAt": "2026-08-19T14:29:59.111Z",
+      "updatedAt": "2026-08-19T14:29:59.111Z"
+    },
+    {
+      "name": "Sample Customer",
+      "email": "customer@cybernest.local",
+      "passwordHash": "$2a$10$9T1iKUbhsOvRTO9YZk2BzOfv7sh46.Gyq3H8Z.c6bR7EmXw2n1XfK",
+      "role": "customer",
+      "_id": "dev_00074",
+      "createdAt": "2026-08-19T14:29:59.111Z",
+      "updatedAt": "2026-08-21T16:48:20.419Z",
+      "cart": [
+        {
+          "product": "dev_00001",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "name": "Jordan Lee",
+      "email": "jordan.lee@example.com",
+      "passwordHash": "$2a$10$9T1iKUbhsOvRTO9YZk2BzOfv7sh46.Gyq3H8Z.c6bR7EmXw2n1XfK",
+      "role": "customer",
+      "_id": "dev_00075",
+      "createdAt": "2026-08-19T14:29:59.111Z",
+      "updatedAt": "2026-08-19T14:29:59.111Z"
+    },
+    {
+      "name": "Priya Shah",
+      "email": "priya.shah@example.com",
+      "passwordHash": "$2a$10$9T1iKUbhsOvRTO9YZk2BzOfv7sh46.Gyq3H8Z.c6bR7EmXw2n1XfK",
+      "role": "customer",
+      "_id": "dev_00076",
+      "createdAt": "2026-08-19T14:29:59.111Z",
+      "updatedAt": "2026-08-19T14:29:59.111Z"
+    },
+    {
+      "name": "Google Customer",
+      "email": "google.customer@cybernest.local",
+      "passwordHash": "social:google",
+      "role": "customer",
+      "_id": "3bfb9040d9a5e0200b199909",
+      "cart": [],
+      "wishlist": [],
+      "createdAt": "2026-08-19T14:36:02.704Z",
+      "updatedAt": "2026-08-19T14:59:56.572Z"
+    },
+    {
+      "name": "Sukanya Bhattacharyya",
+      "email": "bhattacharyyasukanya5@gmail.com",
+      "passwordHash": "$2a$10$4RQs5.14shd/VyMQfE09CuqAFTASFZrvKrBexpvZRHWALvMyFUmK.",
+      "_id": "7eeaf85e727172903bf2eaf5",
+      "role": "customer",
+      "cart": [],
+      "wishlist": [
+        "dev_00026",
+        "dev_00001"
+      ],
+      "createdAt": "2026-08-19T15:15:32.574Z",
+      "updatedAt": "2026-08-22T18:07:38.698Z"
+    }
+  ],
+  "orders": [
+    {
+      "user": "dev_00074",
+      "customer": {
+        "name": "Sample Customer",
+        "email": "customer@cybernest.local"
+      },
+      "items": [
+        {
+          "product": "dev_00001",
+          "title": "Nest Hub Mini",
+          "sku": "CN-SH-001",
+          "quantity": 1,
+          "price": 79
+        },
+        {
+          "product": "dev_00002",
+          "title": "Orbit WiFi 6 Router",
+          "sku": "CN-NW-002",
+          "quantity": 2,
+          "price": 129
+        },
+        {
+          "product": "dev_00003",
+          "title": "Beacon Mesh Node",
+          "sku": "CN-NW-003",
+          "quantity": 1,
+          "price": 89
+        }
+      ],
+      "shippingAddress": {
+        "line1": "100 Market Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "postalCode": "94105",
+        "country": "US"
+      },
+      "subtotal": 426,
+      "shipping": 0,
+      "tax": 34.08,
+      "total": 460.08,
+      "status": "paid",
+      "_id": "dev_00077",
+      "createdAt": "2026-08-19T14:29:59.112Z",
+      "updatedAt": "2026-08-19T14:29:59.112Z"
+    },
+    {
+      "user": "dev_00075",
+      "customer": {
+        "name": "Jordan Lee",
+        "email": "jordan.lee@example.com"
+      },
+      "items": [
+        {
+          "product": "dev_00013",
+          "title": "SonicBuds Air",
+          "sku": "CN-AU-013",
+          "quantity": 2,
+          "price": 49
+        },
+        {
+          "product": "dev_00014",
+          "title": "SonicBuds Pro",
+          "sku": "CN-AU-014",
+          "quantity": 1,
+          "price": 99
+        }
+      ],
+      "shippingAddress": {
+        "line1": "221 W Lake Street",
+        "city": "Chicago",
+        "state": "IL",
+        "postalCode": "60606",
+        "country": "US"
+      },
+      "subtotal": 197,
+      "shipping": 0,
+      "tax": 15.76,
+      "total": 212.76,
+      "status": "fulfilled",
+      "_id": "dev_00078",
+      "createdAt": "2026-08-19T14:29:59.112Z",
+      "updatedAt": "2026-08-19T14:29:59.112Z"
+    },
+    {
+      "user": "dev_00076",
+      "customer": {
+        "name": "Priya Shah",
+        "email": "priya.shah@example.com"
+      },
+      "items": [
+        {
+          "product": "dev_00031",
+          "title": "Link 12-in-1 Dock",
+          "sku": "CN-DK-031",
+          "quantity": 1,
+          "price": 119
+        },
+        {
+          "product": "dev_00032",
+          "title": "Elevate Laptop Stand",
+          "sku": "CN-DG-032",
+          "quantity": 1,
+          "price": 39
+        },
+        {
+          "product": "dev_00033",
+          "title": "FoldAway Tablet Stand",
+          "sku": "CN-DG-033",
+          "quantity": 1,
+          "price": 18
+        }
+      ],
+      "shippingAddress": {
+        "line1": "88 MG Road",
+        "city": "Bengaluru",
+        "state": "KA",
+        "postalCode": "560001",
+        "country": "IN"
+      },
+      "subtotal": 176,
+      "shipping": 0,
+      "tax": 14.08,
+      "total": 190.08,
+      "status": "pending",
+      "_id": "dev_00079",
+      "createdAt": "2026-08-19T14:29:59.112Z",
+      "updatedAt": "2026-08-19T14:29:59.112Z"
+    },
+    {
+      "_id": "14a6305eca5ce684e3b32510",
+      "user": "dev_00074",
+      "customer": {
+        "name": "Sample Customer",
+        "email": "customer@cybernest.local"
+      },
+      "items": [
+        {
+          "product": "dev_00009",
+          "title": "Anchor Smart Plug Duo",
+          "sku": "anchor-smart-plug-duo",
+          "quantity": 3,
+          "price": 24
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 72,
+      "shipping": 8.99,
+      "tax": 5.76,
+      "total": 86.75,
+      "status": "paid",
+      "createdAt": "2026-08-19T17:00:01.337Z",
+      "updatedAt": "2026-08-19T17:00:01.337Z"
+    },
+    {
+      "_id": "24e68b602812424529285bbd",
+      "user": "dev_00074",
+      "customer": {
+        "name": "Sample Customer",
+        "email": "customer@cybernest.local"
+      },
+      "items": [
+        {
+          "product": "dev_00022",
+          "title": "Arc 100W GaN Charger",
+          "sku": "arc-100w-gan-charger",
+          "quantity": 1,
+          "price": 59
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 59,
+      "shipping": 8.99,
+      "tax": 4.72,
+      "total": 72.71,
+      "status": "paid",
+      "createdAt": "2026-08-21T06:35:46.649Z",
+      "updatedAt": "2026-08-21T06:35:46.649Z"
+    },
+    {
+      "_id": "21d08c81f3b8dae81ef33c5c",
+      "user": "7eeaf85e727172903bf2eaf5",
+      "customer": {
+        "name": "Sukanya Bhattacharyya",
+        "email": "bhattacharyyasukanya5@gmail.com"
+      },
+      "items": [
+        {
+          "product": "dev_00022",
+          "title": "Arc 100W GaN Charger",
+          "sku": "arc-100w-gan-charger",
+          "quantity": 2,
+          "price": 59
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 118,
+      "shipping": 0,
+      "tax": 9.44,
+      "total": 127.44,
+      "status": "paid",
+      "createdAt": "2026-08-21T06:55:12.100Z",
+      "updatedAt": "2026-08-21T06:55:12.100Z"
+    },
+    {
+      "_id": "a9216bafcf1200b26445b623",
+      "user": "7eeaf85e727172903bf2eaf5",
+      "customer": {
+        "name": "Sukanya Bhattacharyya",
+        "email": "bhattacharyyasukanya5@gmail.com"
+      },
+      "items": [
+        {
+          "product": "dev_00026",
+          "title": "Volt Slim Power Bank",
+          "sku": "volt-slim-power-bank",
+          "quantity": 1,
+          "price": 29
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 29,
+      "shipping": 8.99,
+      "tax": 2.32,
+      "total": 40.31,
+      "status": "paid",
+      "createdAt": "2026-08-21T16:44:41.865Z",
+      "updatedAt": "2026-08-21T16:44:41.865Z"
+    },
+    {
+      "_id": "1bf1669ae6c6ee57d3789f86",
+      "user": "7eeaf85e727172903bf2eaf5",
+      "customer": {
+        "name": "Sukanya Bhattacharyya",
+        "email": "bhattacharyyasukanya5@gmail.com"
+      },
+      "items": [
+        {
+          "product": "dev_00022",
+          "title": "Arc 100W GaN Charger",
+          "sku": "arc-100w-gan-charger",
+          "quantity": 1,
+          "price": 59
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 59,
+      "shipping": 8.99,
+      "tax": 4.72,
+      "total": 72.71,
+      "status": "paid",
+      "createdAt": "2026-08-21T16:50:45.630Z",
+      "updatedAt": "2026-08-21T16:50:45.630Z"
+    },
+    {
+      "_id": "9b1970f6e59bba1e82cbfc3f",
+      "user": "7eeaf85e727172903bf2eaf5",
+      "customer": {
+        "name": "Sukanya Bhattacharyya",
+        "email": "bhattacharyyasukanya5@gmail.com"
+      },
+      "items": [
+        {
+          "product": "dev_00026",
+          "title": "Volt Slim Power Bank",
+          "sku": "volt-slim-power-bank",
+          "quantity": 1,
+          "price": 29
+        }
+      ],
+      "shippingAddress": {},
+      "subtotal": 29,
+      "shipping": 8.99,
+      "tax": 2.32,
+      "total": 40.31,
+      "status": "paid",
+      "createdAt": "2026-08-22T18:07:38.698Z",
+      "updatedAt": "2026-08-22T18:07:38.698Z"
+    }
+  ],
+  "brands": [
+    {
+      "_id": "brand_cybernest",
+      "name": "CyberNest",
+      "tagline": "Connected home essentials",
+      "initials": "CN",
+      "color": "#0f172a"
+    },
+    {
+      "_id": "brand_orbit",
+      "name": "Orbit",
+      "tagline": "Networking and charging",
+      "initials": "OR",
+      "color": "#0f766e"
+    },
+    {
+      "_id": "brand_pulse",
+      "name": "Pulse",
+      "tagline": "Audio for every setup",
+      "initials": "PU",
+      "color": "#7c3aed"
+    },
+    {
+      "_id": "brand_halo",
+      "name": "Halo",
+      "tagline": "Lighting and smart scenes",
+      "initials": "HA",
+      "color": "#ca8a04"
+    },
+    {
+      "_id": "brand_nova",
+      "name": "Nova",
+      "tagline": "Gaming desk gear",
+      "initials": "NV",
+      "color": "#dc2626"
+    },
+    {
+      "_id": "brand_roam",
+      "name": "Roam",
+      "tagline": "Travel-ready accessories",
+      "initials": "RM",
+      "color": "#2563eb"
+    }
+  ],
+  "siteSettings": {
+    "storeName": "CyberNest",
+    "tagline": "Connected home essentials",
+    "announcement": "Free shippink on demo orders",
+    "supportEmail": "support@cybernest.local",
+    "currency": "USD",
+    "primaryColor": "#12b543",
+    "accentColor": "#f97316",
+    "secondaryColor": "#2563eb",
+    "borderColor": "#d9e2ec",
+    "mutedColor": "#64748b",
+    "surfaceColor": "#ffffff",
+    "headerBackgroundColor": "#0b1220",
+    "headerTextColor": "#ffffff",
+    "buttonTextColor": "#ffffff",
+    "cornerRadius": "8",
+    "contrastMode": "high",
+    "backgroundColor": "#f8fafc",
+    "textColor": "#111827",
+    "heroTitle": "Upgrade every corner of your connected home",
+    "heroSubtitle": "Smart devices, desk gear, and everyday tech curated for modern living.",
+    "buttonLabel": "Shop new arrivals",
+    "logoUrl": "",
+    "heroImageUrl": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80",
+    "updatedAt": "2026-08-29T13:53:36.825Z"
+  },
+  "categories": []
+}

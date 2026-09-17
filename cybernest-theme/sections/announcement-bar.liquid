@@ -1,0 +1,97 @@
+{%- if section.settings.show_bar -%}
+  <section class="announcement-bar{% if section.settings.style == 'surface' %} announcement-bar--surface{% endif %}" aria-label="Announcements">
+    <div class="container">
+      <div class="announcement-bar__track">
+        {%- if section.blocks.size > 0 -%}
+          {%- for block in section.blocks -%}
+            {%- if block.settings.message != blank -%}
+              {%- if block.settings.link != blank -%}
+                <a class="announcement-bar__item" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+                  {{ block.settings.message }}
+                </a>
+              {%- else -%}
+                <p class="announcement-bar__item" {{ block.shopify_attributes }}>{{ block.settings.message }}</p>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- elsif section.settings.message != blank -%}
+          {%- if section.settings.link != blank -%}
+            <a class="announcement-bar__item" href="{{ section.settings.link }}">{{ section.settings.message }}</a>
+          {%- else -%}
+            <p class="announcement-bar__item">{{ section.settings.message }}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_bar",
+      "label": "Show announcement bar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Fallback message",
+      "default": "Free shipping over $50"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Fallback link"
+    },
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Color style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "surface",
+          "label": "Surface"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "settings": [
+        {
+          "type": "text",
+          "id": "message",
+          "label": "Message",
+          "default": "Free shipping over $50"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar",
+      "blocks": [
+        {
+          "type": "announcement"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

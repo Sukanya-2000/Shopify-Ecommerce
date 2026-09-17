@@ -100,5 +100,15 @@
         "default": "assistant_n4"
       }
     ]
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      }
+    ]
   }
 ]
